@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:  'IBM Plex Serif', sans-serif;
+}
+
+.habilidades {
+    border-radius: 0.5rem;
+    border: gray 1px dashed;
+    padding: 1rem;
+    background: rgb(238, 238, 238);
+}
+
+.oliprint {
+    background-image: radial-gradient(
+    circle farthest-corner at 10.2% 55.8%,
+    rgb(96, 9, 107) 0%,
+    rgb(36, 6, 91) 46.2%,
+    rgb(73, 20, 112) 90.1%
+    );
+    padding: 3rem;
+    border-radius: 0.5rem;
+    width: auto;
+    height: auto;
+}
