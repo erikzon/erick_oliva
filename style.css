@@ -3,24 +3,66 @@ body {
     flex-direction: column;
     align-items: center;
     font-family:  'IBM Plex Serif', sans-serif;
+    background-color: lightgray;
+}
+
+.languageselector{
+    align-self: flex-end;
+    margin-right:5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 0.5rem;
+    border: black 1px solid;
+}
+
+#english{
+    border-right: black 1px solid;
+    padding-right: 2px;
 }
 
 .habilidades {
     border-radius: 0.5rem;
     border: gray 1px dashed;
-    padding: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
     background: rgb(238, 238, 238);
 }
 
-.oliprint {
+.tarjetaoliprint{
     background-image: radial-gradient(
-    circle farthest-corner at 10.2% 55.8%,
-    rgb(96, 9, 107) 0%,
-    rgb(36, 6, 91) 46.2%,
-    rgb(73, 20, 112) 90.1%
-    );
+        circle farthest-corner at 10.2% 55.8%,
+        rgb(96, 9, 107) 0%,
+        rgb(36, 6, 91) 46.2%,
+        rgb(73, 20, 112) 90.1%
+        );
     padding: 3rem;
+    margin: 0.5rem;
     border-radius: 0.5rem;
     width: auto;
     height: auto;
+}
+
+.oliprint {
+    
+}
+
+.tarjetatengosed{
+    background: #0F2027;
+    background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+    padding: 3rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    width: auto;
+    height: 200px;
+}
+
+.tengosed {
+    height: 20vh;
+}
+
+.me {
+    border-radius: 100%;
+    width: 10rem;
+    height: 10rem;
 }

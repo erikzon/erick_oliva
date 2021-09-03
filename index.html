@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,26 +11,32 @@
     <link rel="stylesheet" href="style.css">
     <title>Erick Oliva - FrontEnd</title>
 </head>
-<body>
-    <h1 id="greeting">Hola, Soy Erick.</h1>
-    <h2>Soy Front-end Developer</h2>
-    <p>Dessarollo aplicaciones web en Javacript y PHP</p>
 
+<body>
+    <div class="languageselector">
+        <a id="english">EN</a>
+        <a id="spanish">ES</a>
+    </div>
+    <h1 id="greeting"></h1>
+    <div class="contenedorfotografia">
+        <img alt="oliprint" src="./assets/me.webp" class="me" />
+    </div>
+    <h2 id="whatiam"></h2>
+    <p id="whatido"></p>
     <div class="habilidades">
-        <h1>Mis Ultimos trabajos</h1>
-        <div class="oliprint">
-            <img
-                alt="oliprint"
-                src="./assets/oliprint.svg"
-            />            
+        <h1 id="recentworks"></h1>
+        <div class="tarjetaoliprint">
+            <img alt="oliprint" src="./assets/oliprint.svg" class="oliprint" />
+            <h3 style="color:white">Technology stack</h3>
+            <span style="color:white">
+                Vue, TailWind, vite, firebase
+            </span>
         </div>
-        <div class="habilidades">
-            <img
-                alt="oliprint"
-                src="./assets/oliprint.svg"
-            />
+        <div class="tarjetatengosed">
+            <img alt="oliprint" src="./assets/tengosed.webp" class="tengosed" />
         </div>
     </div>
 </body>
 <script src="app.js"></script>
+
 </html>
