@@ -3,7 +3,6 @@ body {
     flex-direction: column;
     align-items: center;
     font-family:  'IBM Plex Serif', sans-serif;
-    background-color: lightgray;
 }
 
 .languageselector{
@@ -28,6 +27,14 @@ body {
     background: rgb(238, 238, 238);
 }
 
+.tarjeta {
+    padding: 2rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    width: auto;
+    height: 200px;
+}
+
 .tarjetaoliprint{
     background-image: radial-gradient(
         circle farthest-corner at 10.2% 55.8%,
@@ -35,29 +42,19 @@ body {
         rgb(36, 6, 91) 46.2%,
         rgb(73, 20, 112) 90.1%
         );
-    padding: 3rem;
-    margin: 0.5rem;
-    border-radius: 0.5rem;
-    width: auto;
-    height: auto;
-}
-
-.oliprint {
-    
 }
 
 .tarjetatengosed{
     background: #0F2027;
     background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);
     background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
-    padding: 3rem;
-    margin: 0.5rem;
-    border-radius: 0.5rem;
-    width: auto;
-    height: 200px;
 }
 
-.tengosed {
+.tarjetacodigo502{
+    background: darkslateblue;
+}
+
+.image {
     height: 20vh;
 }
 
@@ -65,4 +62,11 @@ body {
     border-radius: 100%;
     width: 10rem;
     height: 10rem;
+}
+
+.pill{
+    margin: 6px;
+    padding: 1px;
+    background-color: white;
+    border-radius: 0.5em;
 }

@@ -15,8 +15,6 @@ let es_ES = {
 let lang = es_ES;
 
 // set all the text at loadtime
-
-
 function changeLanguage(language) {
     lang = language;
     document.getElementById("recentworks").innerHTML = `${lang.recentworks}`;
