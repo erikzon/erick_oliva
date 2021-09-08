@@ -48,38 +48,35 @@ section{
 
 #headersection{
     background-color: #F5A623;
-    /* background-image: linear-gradient(
-                    90deg,
-                    #fc4a1a,
-                    #f7b733); */
     padding: 1rem 0rem;
 }
 
-.headercontainer{
-    flex-direction: row;
-}
-
 #greeting{
-    /* position: absolute;
-    top: 8px;
-    left: 16px;
-    z-index: 20; */
     font-size: 42pt;
+    font-weight: 600;
 }
 
 .me {
-    /* position: absolute;
-    right: 20px; */
     border-radius: 100%;
-    width: 50%;
+    height: 20vh;
+    margin: auto 0;
+}
+
+p {
+    margin: 1rem;
+}
+
+a{
+    text-decoration: none;
 }
 
 .infoimg{
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
 }
 
-.dividerrecentworks {
+.divideraboutme {
     position: absolute;
     top: 0;
     left: 0;
@@ -88,14 +85,14 @@ section{
     line-height: 0;
 }
 
-.dividerrecentworks svg {
+.divideraboutme svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 36px;
 }
 
-.dividerrecentworks .shape-fill {
+.divideraboutme .shape-fill {
     fill: #F5A623;
 }
 
@@ -107,6 +104,15 @@ section{
     margin: 0.5rem;
     background: rgb(245, 245, 245);
 }
+
+#certificatebutton {
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: white;
+    box-shadow: black ;
+    border-radius: 1rem;
+}
+
 
 .tarjeta {
     padding: 2rem;
