@@ -108,6 +108,8 @@ a{
 #certificateContainer > ul > li{
     list-style-type: none;
     margin-bottom: 1.5em;
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width: 60em) {
@@ -141,7 +143,7 @@ a{
     margin: 0.5rem;
     border-radius: 0.5rem;
     width: auto;
-    height: 200px;
+    min-height: 8em;
 }
 
 .tarjetaoliprint{
@@ -164,7 +166,7 @@ a{
 }
 
 .image {
-    height: 20vh;
+    max-height: 12em;
 }
 
 .pill{
