@@ -1,7 +1,7 @@
 /* css reset */
 html {
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 19px;
 }
   
 *, *:before, *:after {
@@ -155,7 +155,7 @@ h3 {
     padding: 0.5rem;
     margin: 0.4rem;
     background-color: white;
-    box-shadow: black ;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233) ;
     border-radius: 1rem;
 }
 
@@ -175,7 +175,7 @@ h3 {
 
 .card {
     width: 350px;
-    padding: 2rem;
+    padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
     display: grid;
@@ -201,18 +201,24 @@ h3 {
     background: darkslateblue;
 }
 
-.image {
-    max-height: 12em;
-}
-
 .cardDescription {
     color:white;
 }
 
+hr{
+    color: white;
+}
+
 .pillContainer{
+    align-items: flex-end;
+    margin-top: -10px;
     display: flex;
     flex-direction: row;
     gap: 12px;
+}
+
+.pillContainer h3 {
+    flex: 0 0 100%;
 }
 
 .pill{
