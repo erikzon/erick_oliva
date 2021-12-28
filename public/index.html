@@ -21,7 +21,6 @@
     </header>
 
     <main>
-
         <section id="sectionMain">
             <div class="headerDivider">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -33,15 +32,15 @@
             </div>
             <span id="greetingTitle"></span>
             <img alt="erick_oliva" src="./assets/me.webp" class="me" />
-            <h2 id="whatiamTitle"></h2>
+            <h1 id="whatiamTitle"></h1>
             <div style="display: block">
-                <a href="https://www.linkedin.com/in/erick-oliva-0298381aa/" target="_blank">
+                <a rel="noopener noreferrer" href="https://www.linkedin.com/in/erick-oliva-0298381aa/" target="_blank">
                     <img class="infoimg" src="assets/linkedin.webp" alt="linkedin">
                 </a>
                 <a href="mailto: ericksonoliva@gmail.com" target="_blank">
                     <img class="infoimg" src="assets/email.webp" alt="email">
                 </a>
-                <a href="https://github.com/erikzon" target="_blank">
+                <a rel="noopener noreferrer" href="https://github.com/erikzon" target="_blank">
                     <img class="infoimg" src="assets/github.webp" alt="email">
                 </a>
             </div>
@@ -63,77 +62,75 @@
                         class="shape-fill"></path>
                 </svg>
             </div>
-            <h1 id="aboutmeTitle"></h1>
+            <h2 id="aboutmeTitle"></h2>
             <p id="aboutmeParagraph"></p>
-            <h3 id="certificatesTitle"></h3>
+            <h2 id="certificatesTitle"></h2>
             <div id="certificateContainer">
                 <ul>
                     <li>
-                        <a id="certificateButton"
+                        <a rel="noopener noreferrer" class="certificateButton"
                             href="https://drive.google.com/file/d/19Toq9SGK7fJ3CW_O0Hk1JqgdS1j-1nm4/view?usp=sharing"
                             target="_blank">English (B1)</a>
                     </li>
                     <li>
-                        <a id="certificateButton" href="https://ude.my/UC-d517165b-0b28-4666-a9e3-dcd6c6d6d551"
-                            target="_blank">Modern
+                        <a rel="noopener noreferrer" class="certificateButton"
+                            href="https://ude.my/UC-d517165b-0b28-4666-a9e3-dcd6c6d6d551" target="_blank">Modern
                             Javascript, Udemy Course</a>
                     </li>
                     <li>
-                        <a id="certificateButton"
+                        <a rel="noopener noreferrer" class="certificateButton"
                             href="https://www.coursera.org/account/accomplishments/certificate/W2HNDFVLKPKS"
                             target="_blank">Google IT Fundamentals</a>
                     </li>
-
                 </ul>
-
-
-
             </div>
-            <h3 id="skills"></h3>
+            <h2 id="skills"></h2>
             <p id="skillscontent"></p>
         </section>
 
         <section id="sectionPortfolio">
-            <h1 id="portfolioTitle"></h1>
+            <h2 id="portfolioTitle"></h2>
             <div id="portfolioContainer">
                 <div class="card tarjetaoliprint">
-                    <a href="https://oliprint.web.app">
+                    <a rel="noopener noreferrer" href="https://oliprint.web.app" target="_blank">
                         <img alt="oliprint" src="./assets/oliprint.webp" class="image" />
-                        <span style="color:white; display:block">Stack</span>
-                        <span class="pill">
-                            Vue JS
-                        </span>
-                        <span class="pill">
-                            TailWind CSS
-                        </span>
-                        <span class="pill">
-                            Firebase
-                        </span>
+                        <p class="cardDescription">Este proyecto utiliza Firebase para almacenar imagenes, agregar usuarios y tener tu propia
+                            lista de productos favoritos.</p>
+                        <h3>Stack</h3>
+                        <section class="pillContainer">
+                            <span class="pill">Vue JS</span>
+                            <span class="pill">TailWind CSS</span>
+                            <span class="pill">Firebase</span>
+                        </section>
                     </a>
                 </div>
                 <div class="card tarjetatengosed">
-                    <img alt="tengo sed" src="./assets/tengosed.webp" class="image" />
-                    <span style="color:white; display: block">Stack</span>
-                    <span class="pill">
-                        Vanilla JS
-                    </span>
-                    <span class="pill">Bootstrap</span>
+                    <a rel="noopener noreferrer" href="https://tengosedsportbar.web.app" target="_blank">
+                        <img alt="tengo sed" src="./assets/tengosed.webp" class="image" />
+                        <p class="cardDescription">Sitio Web de un restaurante local. permite ver el menu.</p>
+                        <h3>Stack</h3>
+                        <section class="pillContainer">
+                            <span class="pill">Vanilla JS</span>
+                            <span class="pill">Bootstrap</span>
+                        </section>
+                    </a>
                 </div>
                 <div class="card tarjetacodigo502">
-                    <a href="https://codigo502.web.app" target="_blank">
+                    <a rel="noopener noreferrer" href="https://codigo502.web.app" target="_blank">
                         <img alt="codigo 502" src="./assets/codigo502.webp" class="image" />
-                        <span style="color:white; display: block">Stack</span>
-                        <span class="pill">
-                            Vanilla JS
-                        </span>
-                        <span class="pill">SASS</span>
+                        <p class="cardDescription">Esta web consume la API pantry que aloja los datos de los proximos eventos que realizara la agrupacion. Permite agregar y mofidicar eventos facilmente.</p>
+                        <h3>Stack</h3>
+                        <section class="pillContainer">
+                            <span class="pill">Vanilla JS</span>
+                            <span class="pill">API consuming</span>
+                        </section>
                     </a>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        HOLA ESTA ES UNA PRUEBA DE FOOTER
+        2022 &copy;
     </footer>
 </body>
 <script src="app.js"></script>
