@@ -25,7 +25,7 @@ img {
 /* end of css reset */
 
 body {
-    font-family:  'IBM Plex Serif', sans-serif;
+    font-family: 'IBM Plex Serif', sans-serif;
     padding: 0;
 }
 
@@ -91,7 +91,8 @@ header, section{
 }
 
 p {
-    font-family: sans-serif;
+    font-family:'Roboto', sans-serif;
+    font-weight: lighter;
 }
 
 a{
