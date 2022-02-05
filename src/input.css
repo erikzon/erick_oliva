@@ -2,14 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    @apply bg-slate-800 border-8 border-teal-500;
+    @apply bg-slate-800 text-white ;
     font-family: 'Raleway', sans-serif;
+}
+
+.my-container {
+    @apply bg-slate-800 p-6;
+    background: linear-gradient(to right, rgb(30, 41, 59), rgba(30, 41, 59, 0.3)), url(https://grainy-gradients.vercel.app/noise.svg);
 }
 
 
 .nav-items {
-    @apply text-white active:text-teal-400 hover:text-teal-400 block my-24;
+    @apply active:text-teal-400 hover:text-teal-500 block my-24 focus:text-teal-500 ;
     writing-mode: vertical-rl;
+}
 
+section {
+    @apply h-screen py-12 px-12 border-8  border-teal-500 rounded-3xl;
+}
+
+.my-leading {
+    line-height: 50px;
 }
