@@ -18,12 +18,12 @@ body {
 
 
 .nav-items {
-    @apply active:text-teal-400 hover:text-teal-500 block my-24 focus:text-teal-500 ;
+    @apply active:text-teal-400 hover:text-teal-500 block my-24 focus:text-teal-500 hover:underline hover:underline-offset-8 hover:decoration-4;
     writing-mode: vertical-rl;
 }
 
 section {
-    @apply h-screen py-12 px-12 border-8  border-teal-500 rounded-3xl;
+    @apply h-screen py-12 px-12 rounded-3xl;
 }
 
 .my-leading {
