@@ -40,7 +40,7 @@ hr {
 }
 
 progress{
-    @apply mb-2 h-2 block
+    @apply w-full px-3 mb-4 h-2 block
 }
 
 progress::-webkit-progress-bar {
