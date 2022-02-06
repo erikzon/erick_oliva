@@ -12,7 +12,7 @@ body {
 }
 
 .my-container {
-    @apply bg-slate-800 p-6;
+    @apply bg-slate-800 lg:p-6;
     background: linear-gradient(to right, rgb(30, 41, 59), rgba(30, 41, 59, 0.3)), url(https://grainy-gradients.vercel.app/noise.svg);
 }
 
@@ -23,12 +23,13 @@ body {
 }
 
 section {
-    @apply h-screen py-12 px-12 rounded-3xl;
+    @apply lg:h-screen p-8 lg:p-12 rounded-3xl;
 }
 
 .my-leading {
-    line-height: 50px;
+    line-height: 2.4rem;
 }
+
 
 hr {
     @apply mb-2

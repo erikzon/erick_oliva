@@ -16,7 +16,7 @@
 
 <body>
     <header class="">
-        <nav class="font-semibold text-lg p-14 fixed">
+        <nav class="font-semibold text-lg p-14 fixed hidden lg:block">
             <a href="#home" class="nav-items">Home</a>
             <a href="#aboutMe" class="nav-items">About Me</a>
             <a href="#myPortfolio" class="nav-items">My Portfolio</a>
@@ -26,7 +26,7 @@
     <div class="my-container">
         <main>
             <!-- HOME SECTION -->
-            <section id="home" class="grid grid-flow-col content-center">
+            <section id="home" class="grid grid-flow-row lg:grid-flow-col content-center">
                 <div>
                     <img src="assets/me.webp" alt="Erick Oliva Front-End" class="rounded-full w-4/6 mx-auto">
                 </div>
@@ -61,9 +61,10 @@
 
             <!-- ABOUT ME SECTION -->
             <section id="aboutMe">
-                <article class="grid grid-flow-col content-center px-16 py-7 gap-8">
+                <article class="grid grid-flow-row lg:grid-flow-col content-center lg:px-16 lg:py-7 gap-8">
                     <div>
-                        <h2 class="font-bold text-8xl underline decoration-teal-500 decoration-4 underline-offset-8">
+                        <h2
+                            class="font-bold text-6xl lg:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8">
                             About Me</h2>
                         <p class="text-2xl inline-block my-leading mb-4 font-medium">
                             The scope of my work is a large part of the front end: RWD, Paralax scrolling, coding
@@ -81,7 +82,7 @@
                             Testimonials
                         </h3>
                         <!-- REVIEW EMPIEZA ACA -->
-                        <div id="reviews" class="bg-slate-100 text-black rounded-lg w-4/6 mx-auto p-4">
+                        <div id="reviews" class="bg-slate-100 text-black rounded-lg lg:w-4/6 mx-auto p-4">
                             <ul class="review-list">
                                 <li class="review-item" data-impression-collected="true">
                                     <header>
@@ -129,12 +130,12 @@
                     </div>
                     <!-- ACA TERMINA REVIEW -->
                     <div>
-                        <!-- colocar <progress> con iconos de las tecnologias -->
-                        <h2 class="font-bold text-8xl underline decoration-teal-500 decoration-4 underline-offset-8">
+                        <h2
+                            class="font-bold text-6xl lg:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 mx-auto">
                             Skills</h2>
-                        <ul class="text-2xl inline-block my-leading mb-12 font-medium">
-                            <li>Javascript 
-                                <progress value="70" max="100"></progress> 
+                        <ul class="text-2xl font-medium">
+                            <li>Javascript
+                                <progress value="70" max="100"></progress>
                             </li>
                             <li>Vue
                                 <progress value="70" max="100"></progress>
@@ -170,7 +171,8 @@
 
             <!-- MY PORTFOLIO SECTION -->
             <section id="myPortfolio">
-                <article class="grid grid-cols-3 grid-rows-3 content-center gap-4 px-16 py-7">
+                <article
+                    class="grid grid-flow-row md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-3 content-center gap-4 lg:px-16 lg:py-7">
                     <a rel="noopener noreferrer" href="https://oliprint.web.app" target="_blank"
                         class="hover:bg-teal-600 box-border">
                         <div class="p-2">
@@ -249,8 +251,9 @@
 
             <!-- CONTACT ME SECTION -->
             <section id="contactMe">
-                <article class="px-16 py-7">
-                    <h2 class="font-bold text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 w-full">
+                <article class="lg:px-16 lg:py-7">
+                    <h2
+                        class="font-bold text-6xl lg:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 w-full">
                         Contact me</h2>
                     <div class="block">
                         <a href="mailto:ericksonoliva@gmail.com" target="_blank">

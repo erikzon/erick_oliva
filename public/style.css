@@ -513,6 +513,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .w-4\/6 {
   width: 66.666667%;
 }
@@ -537,16 +541,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2.75rem;
 }
 
-.grid-flow-col {
-  grid-auto-flow: column;
+.w-40 {
+  width: 10rem;
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
+.grid-flow-row {
+  grid-auto-flow: row;
 }
 
 .content-center {
@@ -622,16 +622,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.py-7 {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -655,6 +645,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-base {
@@ -745,7 +740,15 @@ body {
 .my-container {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-  padding: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .my-container {
+    padding: 1.5rem;
+  }
+}
+
+.my-container {
   background: linear-gradient(to right, rgb(30, 41, 59), rgba(30, 41, 59, 0.3)), url(https://grainy-gradients.vercel.app/noise.svg);
 }
 
@@ -780,16 +783,22 @@ body {
 }
 
 section {
-  height: 100vh;
   border-radius: 1.5rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding: 2rem;
+}
+
+@media (min-width: 1024px) {
+  section {
+    height: 100vh;
+  }
+
+  section {
+    padding: 3rem;
+  }
 }
 
 .my-leading {
-  line-height: 50px;
+  line-height: 2.4rem;
 }
 
 hr {
@@ -840,4 +849,51 @@ progress::-webkit-progress-value {
 .hover\:drop-shadow-2xl:hover {
   --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:w-4\/6 {
+    width: 66.666667%;
+  }
+
+  .lg\:grid-flow-col {
+    grid-auto-flow: column;
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .lg\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
 }
