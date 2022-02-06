@@ -16,10 +16,15 @@ body {
     background: linear-gradient(to right, rgb(30, 41, 59), rgba(30, 41, 59, 0.3)), url(https://grainy-gradients.vercel.app/noise.svg);
 }
 
-
 .nav-items {
-    @apply active:text-teal-400 hover:text-teal-500 block my-24 focus:text-teal-500 hover:underline hover:underline-offset-8 hover:decoration-4;
-    writing-mode: vertical-rl;
+    @apply active:text-teal-400 
+    hover:text-teal-500 
+    lg:block lg:my-24 
+    focus:text-teal-500 
+    hover:underline 
+    hover:underline-offset-8 
+    hover:decoration-4 
+    lg:vertical-rl;
 }
 
 section {
@@ -30,17 +35,16 @@ section {
     line-height: 2.4rem;
 }
 
-
 hr {
     @apply mb-2
 }
 
-.pill {
-    @apply px-2 py-1 mx-1 bg-slate-50 rounded-full text-teal-600 font-bold
+li{
+    @apply mb-5
 }
 
 progress{
-    @apply w-full px-3 mb-4 h-2 block
+    @apply w-full px-3  h-1 block
 }
 
 progress::-webkit-progress-bar {
@@ -49,4 +53,8 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
     @apply bg-teal-200 rounded-2xl;
+}
+
+.pill {
+    @apply px-2 py-0  bg-slate-50 rounded-full text-teal-600 font-bold;
 }
