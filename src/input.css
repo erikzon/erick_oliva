@@ -29,3 +29,23 @@ section {
 .my-leading {
     line-height: 50px;
 }
+
+hr {
+    @apply mb-2
+}
+
+.pill {
+    @apply px-2 py-1 mx-1 bg-slate-50 rounded-full text-teal-600 font-bold
+}
+
+progress{
+    @apply mb-2 h-2 block
+}
+
+progress::-webkit-progress-bar {
+    @apply bg-slate-800 rounded-2xl border-2 border-slate-50;
+}
+
+progress::-webkit-progress-value {
+    @apply bg-teal-200 rounded-2xl;
+}
