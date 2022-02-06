@@ -581,10 +581,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.justify-around {
-  justify-content: space-around;
-}
-
 .gap-4 {
   gap: 1rem;
 }
@@ -663,9 +659,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .text-lg {
@@ -769,11 +765,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.vertical-rl {
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
 }
 
 html {
@@ -901,29 +892,9 @@ progress::-webkit-progress-value {
   color: rgb(13 148 136 / var(--tw-text-opacity));
 }
 
-.first-letter\:bg-blue-600::first-letter {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
-.first-letter\:text-teal-300::first-letter {
-  --tw-text-opacity: 1;
-  color: rgb(94 234 212 / var(--tw-text-opacity));
-}
-
 .first-letter\:text-teal-100::first-letter {
   --tw-text-opacity: 1;
   color: rgb(204 251 241 / var(--tw-text-opacity));
-}
-
-.first-letter\:text-teal-50::first-letter {
-  --tw-text-opacity: 1;
-  color: rgb(240 253 250 / var(--tw-text-opacity));
-}
-
-.first-letter\:text-teal-200::first-letter {
-  --tw-text-opacity: 1;
-  color: rgb(153 246 228 / var(--tw-text-opacity));
 }
 
 .hover\:bg-teal-600:hover {
@@ -947,11 +918,6 @@ progress::-webkit-progress-value {
 
   .md\:justify-around {
     justify-content: space-around;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .md\:text-xl {
