@@ -35,6 +35,28 @@ section {
     line-height: 2.4rem;
 }
 
+/* MODAL */
+.modal-window {
+    @apply fixed bg-black bg-opacity-25 top-0 right-0 bottom-0 left-0 z-[999] invisible opacity-0 pointer-events-none transition-all ease-linear;    
+}
+
+.modal-window:target {
+    @apply visible opacity-100 pointer-events-auto;
+}
+
+.modal-window > div {
+    @apply w-2/4 absolute top-1/2 left-1/2 p-2 bg-white text-teal-800 rounded-md translate-x-minus50 translate-y-minus50 h-32 flex content-center items-center justify-around;
+}
+
+.modal-close {
+    @apply text-black bg-teal-400 absolute right-0 top-0 text-center px-3 py-3 text-xl rounded-full;
+}
+
+.modal-close:hover {
+    @apply text-white px-3 py-3;
+}
+/* END OF MODAL */
+
 hr {
     @apply mb-2
 }

@@ -3,7 +3,11 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: ["./public/index.html"],
   theme: {
-    extend: {},
+    extend: {
+      translate: {
+        'minus50': '-50%',
+      }
+    },
   },
   plugins: [
     plugin(function({ addUtilities }) {
