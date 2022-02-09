@@ -19,15 +19,16 @@ body {
 .nav-items {
     @apply
     hover:text-teal-500 
-    lg:block lg:my-24 
+    block 
+    vertical-rl
     hover:underline 
     hover:underline-offset-8 
     hover:decoration-4     
-    lg:vertical-rl;
+    ;
 }
 
 section {
-    @apply lg:h-screen p-8 lg:p-12 rounded-3xl;
+    @apply lg:h-screen p-8 lg:pl-12 lg:pr-4;
 }
 
 .my-leading {

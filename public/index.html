@@ -16,7 +16,8 @@
 
 <body>
     <header class="">
-        <nav class="font-semibold text-lg p-14 fixed hidden lg:block">
+        <!-- p-14 -->
+        <nav class="hidden font-semibold text-lg fixed  lg:flex lg:flex-col lg:justify-around h-screen p-14">
             <a href="#home" class="nav-items">Home</a>
             <a href="#aboutMe" class="nav-items">About Me</a>
             <a href="#myPortfolio" class="nav-items">My Portfolio</a>
@@ -258,10 +259,10 @@
             <!-- MY PORTFOLIO SECTION -->
             <section id="myPortfolio">
                 <h2
-                    class="font-bold text-6xl lg:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 lg:px-16 lg:py-7 mb-5 lg:mb-0">
+                    class="font-bold text-6xl lg:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 lg:px-16 lg:py-0 mb-4 lg:mb-0">
                     Portfolio</h2>
                 <article
-                    class="grid grid-flow-row md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-3 content-center gap-4 lg:px-16 lg:py-7">
+                    class="grid grid-flow-row md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-3 content-center  lg:px-16 lg:py-0">
                     <a rel="noopener noreferrer" href="https://oliprint.web.app" target="_blank"
                         class="hover:bg-teal-600 box-border rounded-md bg-teal-600 lg:bg-transparent">
                         <div class="p-2">
@@ -356,11 +357,11 @@
         </main>
     </div>
     <footer
-        class="backdrop-blur-md  font-semibold fixed bottom-0 lg:hidden w-full px-4 py-6 flex justify-around md:text-xl border-teal-400 border-2">
+        class="backdrop-blur-md  font-semibold fixed bottom-0 lg:hidden w-full px-4 pt-4 pb-5 flex justify-around md:text-xl border-teal-400 border-t-2">
         <a href="#home" class="text-2xl border-teal-400 border-2 p-2 rounded-full">🏠</a>
         <a href="#aboutMe" class="text-2xl border-teal-400 border-2 p-2 rounded-full">🧑‍💻</a>
+        <a href="#experience" class="text-2xl border-teal-400 border-2 p-2 rounded-full">🛠️</a>
         <a href="#myPortfolio" class="text-2xl border-teal-400 border-2 p-2 rounded-full">💼</a>
-        <a href="#myPortfolio" class="text-2xl border-teal-400 border-2 p-2 rounded-full">🛠️</a>
         <a href="#contactMe" class="text-2xl border-teal-400 border-2 p-2 rounded-full">📱</a>
         <!-- <a href="#home" class="nav-items first-letter:text-teal-100">Home</a>
             <a href="#aboutMe" class="nav-items first-letter:text-teal-100">About Me</a>
