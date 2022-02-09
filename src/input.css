@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    @apply bg-slate-800 text-white ;
+    @apply bg-slate-800 text-white selection:text-teal-300 selection:bg-slate-900;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -17,13 +17,12 @@ body {
 }
 
 .nav-items {
-    @apply active:text-teal-400 
+    @apply
     hover:text-teal-500 
     lg:block lg:my-24 
-    focus:text-teal-500 
     hover:underline 
     hover:underline-offset-8 
-    hover:decoration-4 
+    hover:decoration-4     
     lg:vertical-rl;
 }
 
@@ -79,4 +78,8 @@ progress::-webkit-progress-value {
 
 .pill {
     @apply px-2 py-0  bg-slate-50 rounded-full text-teal-600 font-bold;
+}
+
+.certificate-pill {
+    @apply px-3 py-1 text-xl bg-slate-50 rounded-full text-teal-600 underline;
 }
