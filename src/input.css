@@ -21,7 +21,7 @@ body {
 }
 
 .nav-items:hover{
-    filter: brightness(0) saturate(100%) invert(72%) sepia(95%) saturate(239%) hue-rotate(114deg) brightness(95%) contrast(98%);
+    filter:brightness(0) saturate(100%) invert(72%) sepia(95%) saturate(239%) hue-rotate(114deg) brightness(95%) contrast(98%);
 }
 
 section {
@@ -34,7 +34,7 @@ section {
 
 /* MODAL */
 .modal-window {
-    @apply fixed bg-black bg-opacity-25 top-0 right-0 bottom-0 left-0 z-[999] invisible opacity-0 pointer-events-none transition-all ease-linear;    
+    @apply fixed backdrop-blur-sm drop-shadow-xl bg-opacity-25 top-0 right-0 bottom-0 left-0 z-[999] invisible opacity-0 pointer-events-none transition-all ease-linear;    
 }
 
 .modal-window:target {
