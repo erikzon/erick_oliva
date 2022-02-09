@@ -16,18 +16,33 @@
 
 <body>
     <header class="">
-        <!-- p-14 -->
-        <nav class="hidden font-semibold text-lg fixed  lg:flex lg:flex-col lg:justify-around h-screen p-14">
-            <a href="#home" class="nav-items">Home</a>
-            <a href="#aboutMe" class="nav-items">About Me</a>
-            <a href="#myPortfolio" class="nav-items">My Portfolio</a>
-            <a href="#contactMe" class="nav-items">Contact me</a>
+        <nav class="hidden fixed 2xl:flex 2xl:flex-col 2xl:justify-around h-screen px-14 py-24">
+            <a href="#home" class="">
+                <img src="assets/navbarlogo/home.svg" width="35" height="35" alt="home"
+                    class="nav-items">
+            </a>
+            <a href="#aboutMe" class="">
+                <img src="assets/navbarlogo/me.svg" width="35" height="35" alt="me"
+                    class="nav-items">
+            </a>
+            <a href="#skills" class="">
+                <img src="assets/navbarlogo/code.svg" width="35" height="35" alt="skills"
+                    class="nav-items">
+            </a>
+            <a href="#myPortfolio" class="">
+                <img src="assets/navbarlogo/portfolio.svg" width="35" height="35" alt="portfolio"
+                    class="nav-items">
+            </a>
+            <a href="#contactMe" class="">
+                <img src="assets/navbarlogo/contactme.svg" width="35" height="35" alt="contact me"
+                    class="nav-items">
+            </a>
         </nav>
     </header>
     <div class="my-container">
         <main>
             <!-- HOME SECTION -->
-            <section id="home" class="grid grid-flow-row lg:grid-flow-col content-center">
+            <section id="home" class="grid grid-flow-row 2xl:grid-flow-col content-center">
                 <div>
                     <img src="assets/me.webp" alt="Erick Oliva Front-End" class="rounded-full w-4/6 mx-auto">
                 </div>
@@ -36,12 +51,12 @@
                     <h1 class="text-8xl font-bold drop-shadow-lg">I'm Erick</h1>
                     <p class="bg-teal-500 text-4xl py-1 mb-12 px-4 text-slate-800 font-semibold">
                         I'm a Frontend developer</p>
-                    <p class="text-2xl inline-block my-leading font-medium">
+                    <p class="text-2xl inline-block leading-10 font-medium">
                         My name is Erick Oliva, currently transitioning from Vector Artist to
                         <span class="underline decoration-teal-500 decoration-4 underline-offset-8">
                             Front-End Developer.
                         </span>
-                    <p class="text-2xl inline-block my-leading mb-12 font-medium">
+                    <p class="text-2xl inline-block leading-10 mb-12 font-medium">
                         I'm a third year CS student and I'm very excited to get into tech development.</p>
                     </p>
                     <p class="text-xl mb-4">
@@ -61,13 +76,12 @@
                     </div>
                 </div>
             </section>
-
             <!-- ABOUT ME SECTION -->
             <section id="aboutMe">
-                <article class="grid grid-flow-row lg:grid-flow-col content-center lg:px-16 lg:py-7 gap-8">
+                <article class="grid grid-flow-row 2xl:grid-flow-col content-center 2xl:px-16 2xl:py-7 gap-8">
                     <div>
                         <h2
-                            class="font-bold text-6xl lg:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-4">
+                            class="font-bold text-6xl 2xl:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-4">
                             About Me</h2>
                         <p class="text-xl inline-block leading-2 font-medium">
                             The scope of my work is a large part of the front end: RWD, Paralax scrolling, coding
@@ -80,8 +94,7 @@
                         <p class="text-xl inline-block leading-2 mb-4 font-medium">
                             PSD to HTML, PSD to WordPress
                         </p>
-
-                        <div class="lg:flex">
+                        <div class="2xl:flex">
                             <div>
                                 <h3
                                     class="font-bold text-4xl underline decoration-teal-500 decoration-2 underline-offset-8 mb-5">
@@ -102,169 +115,186 @@
                                 <p class="text-lg mb-4">I worked grading and encoding the ERCE test applied in
                                     latinoamerica by Unesco</p>
                             </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <!-- SKILLS SECTION -->
+            <section id="skills">
+                <article class="grid grid-flow-row 2xl:grid-flow-col content-center 2xl:px-16 2xl:py-7 gap-8">
+                    <div>
+                        <h3
+                            class="font-bold text-4xl underline decoration-teal-500 decoration-2 underline-offset-8 mb-5">
+                            Certificates
+                        </h3>
+                        <div class="flex flex-wrap gap-2 mb-2">
+                            <a rel="noopener noreferrer" class="certificate-pill"
+                                href="https://ude.my/UC-d517165b-0b28-4666-a9e3-dcd6c6d6d551"
+                                target="_blank">Javascript🔗</a>
+                            <a rel="noopener noreferrer"
+                                href="https://certification.templatemonster.com/certificates/a72f145f1e4eaa518ddb291b74f2dc32/"
+                                target="_blank" class="certificate-pill">HTML and CSS🔗</a>
+                            <a rel="noopener noreferrer"
+                                href="https://www.coursera.org/account/accomplishments/certificate/W2HNDFVLKPKS"
+                                target="_blank" class="certificate-pill">IT GOOGLE🔗</a>
+                            <a rel="noopener noreferrer"
+                                href="https://drive.google.com/file/d/19Toq9SGK7fJ3CW_O0Hk1JqgdS1j-1nm4/view?usp=sharing"
+                                target="_blank" class="certificate-pill">English (B1)🔗</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-bold text-4xl underline decoration-teal-500 decoration-2 underline-offset-8 mb-5">
+                            Testimonials
+                        </h3>
+                        <div class="interior">
+                            <a class="px-4 py-2 bg-teal-300 rounded-full text-slate-700"
+                                href="#open-modal">Disclaimer</a>
+                        </div>
+                        <div id="open-modal" class="modal-window">
                             <div>
-                                <h3
-                                    class="font-bold text-4xl underline decoration-teal-500 decoration-2 underline-offset-8 mb-5">
-                                    Certificates
-                                </h3>
-                                <div class="flex flex-wrap gap-2 mb-2">
-                                    <a class="certificate-pill"
-                                        href="https://ude.my/UC-d517165b-0b28-4666-a9e3-dcd6c6d6d551"
-                                        target="_blank">Javascript🔗</a>
-                                    <a href="https://certification.templatemonster.com/certificates/a72f145f1e4eaa518ddb291b74f2dc32/"
-                                        target="_blank" class="certificate-pill">HTML and CSS🔗</a>
-                                    <a href="https://www.coursera.org/account/accomplishments/certificate/W2HNDFVLKPKS"
-                                        target="_blank" class="certificate-pill">IT GOOGLE🔗</a>
-                                    <a href="https://drive.google.com/file/d/19Toq9SGK7fJ3CW_O0Hk1JqgdS1j-1nm4/view?usp=sharing"
-                                        target="_blank" class="certificate-pill">English (B1)🔗</a>
-                                </div>
-                                <h3
-                                    class="font-bold text-4xl underline decoration-teal-500 decoration-2 underline-offset-8 mb-5">
-                                    Testimonials
-                                </h3>
-                                <div class="interior">
-                                    <a class="px-4 py-2 bg-teal-300 rounded-full text-slate-700"
-                                        href="#open-modal">Disclaimer</a>
-                                </div>
-                                <div id="open-modal" class="modal-window">
-                                    <div>
-                                        <a href="#visitanos" title="Close" class="modal-close">&times;</a>
-                                        <p>
-                                            This is just a proof of soft skills on the job I'm currently working on.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- REVIEW EMPIEZA ACA -->
-                                <div id="reviews" class="bg-slate-100 text-black rounded-lg lg:w-4/6 mx-auto p-4">
-                                    <ul class="review-list">
-                                        <li class="review-item" data-impression-collected="true">
-                                            <header>
-                                                <div class="reviewer-details flex items-center">
-                                                    <div class="user-profile-image">
-                                                        <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/01ce8986df8d9db01c3ff7aefd8ca371-645849081573186358592/JPEG_20191107_201237_6206581623774737260.jpg"
-                                                            class="w-12 rounded-xl" alt="martinisal" loading="lazy">
-                                                    </div>
-                                                    <h5 class="text-bold text-2xl">Martinisal</h5>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
-                                                        <path fill="#ffbd00"
-                                                            d="M7.5 0.25 L9.375 6 h5.625 L10.375 9.25 L12.25 14.875 L7.5 11.375 L2.75 14.875 L4.625 9.25 L0 6 h5.625 Z" />
-                                                    </svg>
-                                                    <span class="text-xl text-yellow-500 font-bold">
-                                                        5
-                                                    </span>
-                                                </div>
-                                                <div class="reviewer-sub-details mb-2">
-                                                    <div class="country flex gap-2 items-center">
-                                                        <img class="country-flag w-8"
-                                                            src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png"
-                                                            alt="US" loading="lazy">
-                                                        <div class="text-slate-600 text-base">
-                                                            United States
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </header>
-                                            <div class="review-description">
-                                                <p class="text-lg">Seller communicated clearly to set expectations,
-                                                    worked
-                                                    with
-                                                    me to get the result I was looking for. Highly recommend! The
-                                                    project I
-                                                    asked for was converting my wifes character from an MMO we play into
-                                                    the
-                                                    anime style graphic, and I got exactly what I was looking for. I'm
-                                                    going
-                                                    to
-                                                    frame a print of it as one of my wifes Christmas gifts.</p>
-                                            </div>
-                                            <span class="summarize flex justify-end">
-                                                <time class="text-base text-slate-600">
-                                                    Published 2 months ago
-                                                </time>
-                                            </span>
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <a href="#visitanos" title="Close" class="modal-close">&times;</a>
+                                <p>
+                                    This is just a proof of soft skills on the job I'm currently working on.
+                                </p>
                             </div>
+                        </div>
+                        <!-- REVIEW EMPIEZA ACA -->
+                        <div id="reviews" class="bg-slate-100 text-black rounded-lg 2xl:w-4/6 mx-auto p-4">
+                            <ul class="review-list">
+                                <li class="review-item" data-impression-collected="true">
+                                    <header>
+                                        <div class="reviewer-details flex items-center">
+                                            <div class="user-profile-image">
+                                                <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/01ce8986df8d9db01c3ff7aefd8ca371-645849081573186358592/JPEG_20191107_201237_6206581623774737260.jpg"
+                                                    class="w-12 rounded-xl" alt="martinisal" loading="lazy">
+                                            </div>
+                                            <h5 class="text-bold text-2xl">Martinisal</h5>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+                                                <path fill="#ffbd00"
+                                                    d="M7.5 0.25 L9.375 6 h5.625 L10.375 9.25 L12.25 14.875 L7.5 11.375 L2.75 14.875 L4.625 9.25 L0 6 h5.625 Z" />
+                                            </svg>
+                                            <span class="text-xl text-yellow-500 font-bold">
+                                                5
+                                            </span>
+                                        </div>
+                                        <div class="reviewer-sub-details mb-2">
+                                            <div class="country flex gap-2 items-center">
+                                                <img class="country-flag w-8"
+                                                    src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png"
+                                                    alt="US" loading="lazy">
+                                                <div class="text-slate-600 text-base">
+                                                    United States
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <div class="review-description">
+                                        <p class="text-lg">Seller communicated clearly to set expectations,
+                                            worked
+                                            with
+                                            me to get the result I was looking for. Highly recommend! The
+                                            project I
+                                            asked for was converting my wifes character from an MMO we play into
+                                            the
+                                            anime style graphic, and I got exactly what I was looking for. I'm
+                                            going
+                                            to
+                                            frame a print of it as one of my wifes Christmas gifts.</p>
+                                    </div>
+                                    <span class="summarize flex justify-end">
+                                        <time class="text-base text-slate-600">
+                                            Published 2 months ago
+                                        </time>
+                                    </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h2
+                                class="font-bold text-6xl 2xl:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 mx-auto mb-4">
+                                Skills
+                            </h2>
+                            <ul class="text-2xl leading-8 font-medium">
+                                <li>
+                                    <img src="./assets/skillslogo/js.webp" alt="bootstrap"
+                                        class="w-6 h-auto inline-block">
+                                    Javascript
+                                    <progress value="70" max="100"></progress>
+                                </li>
+                                <li>
+                                    <img src="./assets/skillslogo/vue.webp" alt="bootstrap"
+                                        class="w-6 h-auto inline-block">
+                                    Vue JS
+                                    <progress value="70" max="100"></progress>
+                                </li>
+                                <li>
+                                    <img src="./assets/skillslogo/react.webp" alt="bootstrap"
+                                        class="w-6 h-auto inline-block">
+                                    React JS
+                                    <progress value="20" max="100"></progress>
+                                </li>
+                                <li>
+                                    <img src="./assets/skillslogo/tailwind.webp" alt="bootstrap"
+                                        class="w-7 h-auto inline-block">
+                                    Tailwind CSS
+                                    <progress value="80" max="100"></progress>
+                                </li>
+                                <li>
+                                    <img src="./assets/skillslogo/html5.webp" alt="bootstrap"
+                                        class="w-6 h-auto inline-block">
+                                    HTML5
+                                    <progress value="80" max="100"></progress>
+                                </li>
+                                <li>
+                                    <img src="./assets/skillslogo/firebase.webp" alt="bootstrap"
+                                        class="w-6 h-auto inline-block">
+                                    Firebase
+                                    <progress value="50" max="100"></progress>
+                                </li>
+                                <li>
+                                    <img src="./assets/skillslogo/vuetify.webp" alt="bootstrap"
+                                        class="w-6 h-auto inline-block">
+                                    Vuetify
+                                    <progress value="70" max="100"></progress>
+                                </li>
+                                <li>
+                                    <img src="./assets/skillslogo/bootstrap.webp" alt="bootstrap"
+                                        class="w-7 h-auto inline-block">
+                                    Bootstrap
+                                    <progress value="80" max="100"></progress>
+                                </li>
+                                <li>
+                                    <img src="./assets/skillslogo/css3.webp" alt="bootstrap"
+                                        class="w-6 h-auto inline-block">
+                                    CSS 3
+                                    <progress value="70" max="100"></progress>
+                                </li>
+                                <li>
+                                    <img src="./assets/skillslogo/git.webp" alt="bootstrap"
+                                        class="w-6 h-auto inline-block">
+                                    Git
+                                    <progress value="65" max="100"></progress>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <!-- ACA TERMINA REVIEW -->
-                    <div>
-                        <h2
-                            class="font-bold text-6xl lg:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 mx-auto mb-4">
-                            Skills</h2>
-                        <ul class="text-2xl my-leading font-medium">
-                            <li>
-                                <img src="./assets/skillslogo/js.webp" alt="bootstrap" class="w-6 h-auto inline-block">
-                                Javascript
-                                <progress value="70" max="100"></progress>
-                            </li>
-                            <li>
-                                <img src="./assets/skillslogo/vue.webp" alt="bootstrap" class="w-6 h-auto inline-block">
-                                Vue JS
-                                <progress value="70" max="100"></progress>
-                            </li>
-                            <li>
-                                <img src="./assets/skillslogo/react.webp" alt="bootstrap"
-                                    class="w-6 h-auto inline-block">
-                                React JS
-                                <progress value="20" max="100"></progress>
-                            </li>
-                            <li>
-                                <img src="./assets/skillslogo/tailwind.webp" alt="bootstrap"
-                                    class="w-7 h-auto inline-block">
-                                Tailwind CSS
-                                <progress value="80" max="100"></progress>
-                            </li>
-                            <li>
-                                <img src="./assets/skillslogo/html5.webp" alt="bootstrap"
-                                    class="w-6 h-auto inline-block">
-                                HTML5
-                                <progress value="80" max="100"></progress>
-                            </li>
-                            <li>
-                                <img src="./assets/skillslogo/firebase.webp" alt="bootstrap"
-                                    class="w-6 h-auto inline-block">
-                                Firebase
-                                <progress value="50" max="100"></progress>
-                            </li>
-                            <li>
-                                <img src="./assets/skillslogo/vuetify.webp" alt="bootstrap"
-                                    class="w-6 h-auto inline-block">
-                                Vuetify
-                                <progress value="70" max="100"></progress>
-                            </li>
-                            <li>
-                                <img src="./assets/skillslogo/bootstrap.webp" alt="bootstrap"
-                                    class="w-7 h-auto inline-block">
-                                Bootstrap
-                                <progress value="80" max="100"></progress>
-                            </li>
-                            <li>
-                                <img src="./assets/skillslogo/css3.webp" alt="bootstrap"
-                                    class="w-6 h-auto inline-block">
-                                CSS 3
-                                <progress value="70" max="100"></progress>
-                            </li>
-                            <li>
-                                <img src="./assets/skillslogo/git.webp" alt="bootstrap" class="w-6 h-auto inline-block">
-                                Git
-                                <progress value="65" max="100"></progress>
-                            </li>
-                        </ul>
-                    </div>
+
                 </article>
             </section>
             <!-- MY PORTFOLIO SECTION -->
             <section id="myPortfolio">
                 <h2
-                    class="font-bold text-6xl lg:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 lg:px-16 lg:py-0 mb-4 lg:mb-0">
+                    class="font-bold 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 2xl:px-16 2xl:py-0 mb-4 2xl:mb-0">
                     Portfolio</h2>
                 <article
-                    class="grid grid-flow-row md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-3 content-center  lg:px-16 lg:py-0">
+                    class="grid grid-flow-row md:grid-cols-2 md:grid-rows-2 2xl:grid-cols-3 2xl:grid-rows-3 content-center  2xl:px-16 2xl:py-0">
                     <a rel="noopener noreferrer" href="https://oliprint.web.app" target="_blank"
-                        class="hover:bg-teal-600 box-border rounded-md bg-teal-600 lg:bg-transparent">
+                        class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
                         <div class="p-2">
                             <img alt="oliprint" src="./assets/oliprint.webp" class="mx-auto rounded-sm" />
                             <p>
@@ -279,7 +309,7 @@
                         </div>
                     </a>
                     <a rel="noopener noreferrer" href="https://ospgt.com/" target="_blank"
-                        class="hover:bg-teal-600 box-border rounded-md bg-teal-600 lg:bg-transparent">
+                        class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
                         <div class="p-2">
                             <img alt="imp" src="./assets/ospgt.webp" class="mx-auto rounded-sm" />
                             <p class="">
@@ -295,7 +325,7 @@
                         </div>
                     </a>
                     <a rel="noopener noreferrer" href="https://tengosedsportbar.web.app" target="_blank"
-                        class="hover:bg-teal-600 box-border rounded-md bg-teal-600 lg:bg-transparent">
+                        class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
                         <div class="p-2">
                             <img alt="tengo sed" src="./assets/tengosed.webp" class="mx-auto rounded-sm" />
                             <p class="">Sitio Web de un restaurante local. permite visualizar los platillos, conocer la
@@ -308,7 +338,7 @@
                         </div>
                     </a>
                     <a rel="noopener noreferrer" href="https://codigo502.web.app" target="_blank"
-                        class="hover:bg-teal-600 box-border rounded-md bg-teal-600 lg:bg-transparent">
+                        class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
                         <div class="p-2">
                             <img alt="codigo 502" src="./assets/codigo502.webp" class="mx-auto rounded-sm" />
                             <p class="">
@@ -322,7 +352,7 @@
                         </div>
                     </a>
                     <a rel="noopener noreferrer" href="https://budgets-vueapp.web.app/" target="_blank"
-                        class="hover:bg-teal-600 box-border rounded-md bg-teal-600 lg:bg-transparent">
+                        class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
                         <div class="p-2">
                             <img alt="budgets app" src="./assets/budgets.webp" class="mx-auto rounded-sm" />
                             <p class="">
@@ -338,12 +368,11 @@
                     </a>
                 </article>
             </section>
-
             <!-- CONTACT ME SECTION -->
-            <section id="contactMe" class="mb-24 lg:mb-0">
-                <article class="lg:px-16 lg:py-7">
+            <section id="contactMe" class="mb-24 2xl:mb-0">
+                <article class="2xl:px-16 2xl:py-7">
                     <h2
-                        class="font-bold text-5xl lg:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 w-full">
+                        class="font-bold text-5xl 2xl:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 w-full">
                         Contact me</h2>
                     <div class="block">
                         <a href="mailto:ericksonoliva@gmail.com" target="_blank">
@@ -357,16 +386,22 @@
         </main>
     </div>
     <footer
-        class="backdrop-blur-md  font-semibold fixed bottom-0 lg:hidden w-full px-4 pt-4 pb-5 flex justify-around md:text-xl border-teal-400 border-t-2">
-        <a href="#home" class="text-2xl border-teal-400 border-2 p-2 rounded-full">🏠</a>
-        <a href="#aboutMe" class="text-2xl border-teal-400 border-2 p-2 rounded-full">🧑‍💻</a>
-        <a href="#experience" class="text-2xl border-teal-400 border-2 p-2 rounded-full">🛠️</a>
-        <a href="#myPortfolio" class="text-2xl border-teal-400 border-2 p-2 rounded-full">💼</a>
-        <a href="#contactMe" class="text-2xl border-teal-400 border-2 p-2 rounded-full">📱</a>
-        <!-- <a href="#home" class="nav-items first-letter:text-teal-100">Home</a>
-            <a href="#aboutMe" class="nav-items first-letter:text-teal-100">About Me</a>
-            <a href="#myPortfolio" class="nav-items first-letter:text-teal-100">My Portfolio</a>
-            <a href="#contactMe" class="nav-items first-letter:text-teal-100">Contact me</a> -->
+        class="backdrop-blur-md  font-semibold fixed bottom-0 2xl:hidden w-full px-4 pt-4 pb-5 flex justify-around md:text-xl border-teal-400 border-t-2">
+        <a href="#home" class="text-2xl border-teal-400 border-2 p-2 rounded-full">
+            <img src="assets/navbarlogo/home.svg" alt="home">
+        </a>
+        <a href="#aboutMe" class="text-2xl border-teal-400 border-2 p-2 rounded-full">
+            <img src="assets/navbarlogo/me.svg" alt="me">
+        </a>
+        <a href="#skills" class="text-2xl border-teal-400 border-2 p-2 rounded-full">
+            <img src="assets/navbarlogo/code.svg" alt="skills">
+        </a>
+        <a href="#myPortfolio" class="text-2xl border-teal-400 border-2 p-2 rounded-full">
+            <img src="assets/navbarlogo/portfolio.svg" alt="portfolio">
+        </a>
+        <a href="#contactMe" class="text-2xl border-teal-400 border-2 p-2 rounded-full">
+            <img src="assets/navbarlogo/contactme.svg" alt="contact me">
+        </a>
     </footer>
 </body>
 

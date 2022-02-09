@@ -525,16 +525,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-auto {
-  height: auto;
-}
-
-.h-full {
-  height: 100%;
-}
-
 .h-screen {
   height: 100vh;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .w-4\/6 {
@@ -667,16 +663,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(13 148 136 / var(--tw-bg-opacity));
 }
 
-.p-14 {
-  padding: 3.5rem;
-}
-
 .p-4 {
   padding: 1rem;
 }
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .py-1 {
@@ -700,11 +702,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-5 {
   padding-bottom: 1.25rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-4xl {
@@ -732,6 +729,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -756,6 +758,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .italic {
   font-style: italic;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
 }
 
 .text-slate-800 {
@@ -878,7 +888,7 @@ body {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1536px) {
   .my-container {
     padding: 1.5rem;
   }
@@ -889,25 +899,21 @@ body {
 }
 
 .nav-items {
-  display: block;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  border-bottom-width: 2px;
+  border-color: transparent;
 }
 
 .nav-items:hover {
-  --tw-text-opacity: 1;
-  color: rgb(20 184 166 / var(--tw-text-opacity));
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  text-decoration-thickness: 4px;
-  text-underline-offset: 8px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  filter: brightness(0) saturate(100%) invert(72%) sepia(95%) saturate(239%) hue-rotate(114deg) brightness(95%) contrast(98%);
 }
 
 section {
   padding: 2rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1536px) {
   section {
     height: 100vh;
   }
@@ -1061,16 +1067,11 @@ progress::-webkit-progress-value {
           text-decoration-line: underline;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1536px) {
   .certificate-pill {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-}
-
-.first-letter\:text-teal-100::first-letter {
-  --tw-text-opacity: 1;
-  color: rgb(204 251 241 / var(--tw-text-opacity));
 }
 
 .hover\:bg-teal-600:hover {
@@ -1098,76 +1099,69 @@ progress::-webkit-progress-value {
   }
 }
 
-@media (min-width: 1024px) {
-  .lg\:mb-0 {
+@media (min-width: 1536px) {
+  .\32xl\:mb-0 {
     margin-bottom: 0px;
   }
 
-  .lg\:block {
-    display: block;
-  }
-
-  .lg\:flex {
+  .\32xl\:flex {
     display: flex;
   }
 
-  .lg\:hidden {
+  .\32xl\:hidden {
     display: none;
   }
 
-  .lg\:w-4\/6 {
+  .\32xl\:w-4\/6 {
     width: 66.666667%;
   }
 
-  .lg\:grid-flow-col {
+  .\32xl\:grid-flow-col {
     grid-auto-flow: column;
   }
 
-  .lg\:grid-cols-3 {
+  .\32xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:grid-rows-3 {
+  .\32xl\:grid-rows-3 {
     grid-template-rows: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:flex-row {
-    flex-direction: row;
-  }
-
-  .lg\:flex-col {
+  .\32xl\:flex-col {
     flex-direction: column;
   }
 
-  .lg\:justify-between {
-    justify-content: space-between;
-  }
-
-  .lg\:justify-around {
+  .\32xl\:justify-around {
     justify-content: space-around;
   }
 
-  .lg\:bg-transparent {
+  .\32xl\:bg-transparent {
     background-color: transparent;
   }
 
-  .lg\:px-16 {
+  .\32xl\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
   }
 
-  .lg\:py-7 {
+  .\32xl\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
   }
 
-  .lg\:py-0 {
+  .\32xl\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
   }
 
-  .lg\:text-8xl {
+  .\32xl\:text-8xl {
     font-size: 6rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 }
