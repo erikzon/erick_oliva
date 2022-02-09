@@ -25,7 +25,7 @@ body {
 }
 
 section {
-    @apply 2xl:h-screen p-8 2xl:pl-12 2xl:pr-4;
+    @apply 2xl:h-screen px-6 py-2 2xl:pl-12 2xl:pr-4;
 }
 
 .my-leading {
@@ -79,5 +79,5 @@ progress::-webkit-progress-value {
 }
 
 .certificate-pill {
-    @apply px-3 py-1 text-lg 2xl:text-xl bg-slate-50 rounded-full text-teal-600 underline;
+    @apply px-3 py-1  2xl:text-xl bg-slate-50 rounded-full text-teal-600 underline;
 }

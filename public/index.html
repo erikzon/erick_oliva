@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header >
+    <header>
         <nav class="hidden fixed 2xl:flex 2xl:flex-col 2xl:justify-around h-screen px-14 py-24">
             <a href="#home" class="">
                 <img src="assets/navbarlogo/home.svg" width="35" height="35" alt="home" class="nav-items">
@@ -34,339 +34,333 @@
             </a>
         </nav>
     </header>
-    <div class="my-container">
-        <main>
-            <!-- HOME SECTION -->
-            <section id="home" class="grid grid-flow-row 2xl:grid-flow-col content-center">
-                <div>
-                    <img src="assets/me.webp" alt="Erick Oliva Front-End" class="rounded-full w-4/6 mx-auto">
+    <main class="my-container">
+        <!-- HOME SECTION -->
+        <section id="home" class="grid grid-flow-row 2xl:grid-flow-col content-center">
+            <div>
+                <img src="assets/me.webp" alt="Erick Oliva Front-End" class="rounded-full w-4/6 mx-auto">
+            </div>
+            <div>
+                <h2 class="text-4xl font-semibold">Hello</h2>
+                <h1 class="text-7xl lg:text-8xl font-bold drop-shadow-lg">I'm Erick</h1>
+                <p class="bg-teal-500 text-2xl lg:text-4xl py-1 mb-6 lg:mb-12 px-4 text-slate-800 font-semibold">
+                    I'm a Frontend developer</p>
+                <p class="text-2xl inline-block leading-10 font-medium">
+                    My name is Erick Oliva, currently transitioning from Vector Artist to
+                    <span class="underline decoration-teal-500 decoration-4 underline-offset-8">
+                        Front-End Developer.
+                    </span>
+                <p class="text-2xl inline-block leading-10 mb-3 lg:mb-12 font-medium">
+                    I'm a third year CS student and I'm very excited to get into tech development.</p>
+                </p>
+                <p class="text-xl mb-0 lg:mb-4">
+                    Find me on:
+                </p>
+                <div class="flex gap-4 items-center mb-4 lg:mb-0">
+                    <a rel="noopener noreferrer" href="https://www.linkedin.com/in/erick-oliva-0298381aa/"
+                        target="_blank">
+                        <img class="w-10 hover:drop-shadow-2xl" src="assets/linkedin.webp" alt="linkedin">
+                    </a>
+                    <a rel="noopener noreferrer" href="https://github.com/erikzon" target="_blank">
+                        <img class="w-10 brightness-200 hover:drop-shadow-2xl" src="assets/github.webp" alt="email">
+                    </a>
+                    <a rel="noopener noreferrer" href="https://www.fiverr.com/share/EkA4P8" target="_blank">
+                        <img class="w-10 brightness-200 hover:drop-shadow-2xl" src="assets/fiverr.webp" alt="email">
+                    </a>
                 </div>
-                <div>
-                    <h2 class="text-4xl font-semibold">Hello</h2>
-                    <h1 class="text-7xl lg:text-8xl font-bold drop-shadow-lg">I'm Erick</h1>
-                    <p class="bg-teal-500 text-2xl lg:text-4xl py-1 mb-6 lg:mb-12 px-4 text-slate-800 font-semibold">
-                        I'm a Frontend developer</p>
-                    <p class="text-2xl inline-block leading-10 font-medium">
-                        My name is Erick Oliva, currently transitioning from Vector Artist to
-                        <span class="underline decoration-teal-500 decoration-4 underline-offset-8">
-                            Front-End Developer.
-                        </span>
-                    <p class="text-2xl inline-block leading-10 mb-3 lg:mb-12 font-medium">
-                        I'm a third year CS student and I'm very excited to get into tech development.</p>
-                    </p>
-                    <p class="text-xl mb-0 lg:mb-4">
-                        Find me on:
-                    </p>
-                    <div class="flex gap-4 items-center">
-                        <a rel="noopener noreferrer" href="https://www.linkedin.com/in/erick-oliva-0298381aa/"
-                            target="_blank">
-                            <img class="w-10 hover:drop-shadow-2xl" src="assets/linkedin.webp" alt="linkedin">
-                        </a>
-                        <a rel="noopener noreferrer" href="https://github.com/erikzon" target="_blank">
-                            <img class="w-10 brightness-200 hover:drop-shadow-2xl" src="assets/github.webp" alt="email">
-                        </a>
-                        <a rel="noopener noreferrer" href="https://www.fiverr.com/share/EkA4P8" target="_blank">
-                            <img class="w-10 brightness-200 hover:drop-shadow-2xl" src="assets/fiverr.webp" alt="email">
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <!-- ABOUT ME SECTION -->
-            <section id="aboutMe"
-                class="grid grid-flow-row 2xl:grid-flow-col content-center mx-auto w-3/4 2xl:px-16 2xl:py-7 gap-8">
-                <div>
-                    <h2
-                        class="font-bold text-6xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
-                        About Me</h2>
-                    <p class="text-xl inline-block leading-8 font-medium">
-                        The scope of my work is a large part of the front end: RWD, Paralax scrolling, coding
-                        layouts, mobile, single page apps. (MVC), animation, CSS / JS and other work based on HTML/
-                        CSS / JS.
-                    </p>
-                    <p class="text-xl inline-block leading-8 font-medium">
-                        I also build the applications PHP / MySQL mostly on open source systems like WordPress.
-                    </p>
-                    <p class="text-xl inline-block leading-8 mb-4 font-medium">
-                        PSD to HTML, PSD to WordPress.
-                    </p>
-
-                </div>
-                <div class="2xl:flex 2xl:flex-col">
-                    <h3 class="font-bold text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
-                        Experience
-                    </h3>
-                    <h3 class="text-3xl font-medium leading-6">Vector Artist</h3>
-                    <h4 class="italic text-lg text-slate-200 mb-2">Fiverr (2020 - current)</h4>
-                    <p class="text-xl mb-6">Working along my wife delivering vector artwork at Fiverr.com
-                    </p>
-
-                    <h3 class="text-3xl font-medium leading-6">Frontend web developer</h3>
-                    <h4 class="italic text-lg text-slate-200 mb-2">Digital Thinking (2020) </h4>
-                    <p class="text-xl mb-6"> Implemented responsive website, lading page and API consuming
-                        from Zoho CRM and REST apis.</p>
-
-                    <h3 class="text-3xl font-medium leading-6">ERCE test encoder</h3>
-                    <h4 class="italic text-lg text-slate-200 mb-2">DIGEDUCA and UNESCO Chile (2019) </h4>
-                    <p class="text-xl mb-6">I worked grading and encoding the ERCE test applied in
-                        latinoamerica by Unesco</p>
-                </div>
-            </section>
-            <!-- SKILLS SECTION -->
-            <section id="skills" class="grid grid-flow-row 2xl:grid-flow-col content-center 2xl:px-16 gap-4">
-                <div>
-                    <h3 class="font-bold text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
-                        Certificates
-                    </h3>
-                    <div class="flex flex-wrap gap-2 mb-2">
-                        <a rel="noopener noreferrer" class="certificate-pill"
-                            href="https://ude.my/UC-d517165b-0b28-4666-a9e3-dcd6c6d6d551"
-                            target="_blank">Javascript🔗</a>
-                        <a rel="noopener noreferrer"
-                            href="https://certification.templatemonster.com/certificates/a72f145f1e4eaa518ddb291b74f2dc32/"
-                            target="_blank" class="certificate-pill">HTML and CSS🔗</a>
-                        <a rel="noopener noreferrer"
-                            href="https://www.coursera.org/account/accomplishments/certificate/W2HNDFVLKPKS"
-                            target="_blank" class="certificate-pill">IT GOOGLE🔗</a>
-                        <a rel="noopener noreferrer"
-                            href="https://drive.google.com/file/d/19Toq9SGK7fJ3CW_O0Hk1JqgdS1j-1nm4/view?usp=sharing"
-                            target="_blank" class="certificate-pill">English (B1)🔗</a>
-                    </div>
-
-                    <div>
-                        <div class="flex flex-wrap content-center">
-                            <h3
-                                class="font-bold text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
-                                Testimonials
-                            </h3>
-                            <div class="interior m-3">
-                                <a class="px-4 py-2 bg-teal-300 rounded-full text-slate-700"
-                                    href="#open-modal">Disclaimer</a>
-                            </div>
-                            <div id="open-modal" class="modal-window">
-                                <div>
-                                    <a href="#visitanos" title="Close" class="modal-close">&times;</a>
-                                    <p>
-                                        This is just a proof of soft skills on the job I'm currently working on.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- REVIEW EMPIEZA ACA -->
-                        <div id="reviews" class="bg-slate-100 text-black rounded-lg 2xl:w-4/6  p-6">
-                            <ul class="review-list">
-                                <li class="review-item" data-impression-collected="true">
-                                    <header>
-                                        <div class="reviewer-details flex items-center">
-                                            <div class="user-profile-image">
-                                                <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/01ce8986df8d9db01c3ff7aefd8ca371-645849081573186358592/JPEG_20191107_201237_6206581623774737260.jpg"
-                                                    class="w-12 rounded-xl" alt="martinisal" loading="lazy">
-                                            </div>
-                                            <h5 class="text-bold text-2xl">Martinisal</h5>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
-                                                <path fill="#ffbd00"
-                                                    d="M7.5 0.25 L9.375 6 h5.625 L10.375 9.25 L12.25 14.875 L7.5 11.375 L2.75 14.875 L4.625 9.25 L0 6 h5.625 Z" />
-                                            </svg>
-                                            <span class="text-xl text-yellow-500 font-bold">
-                                                5
-                                            </span>
-                                        </div>
-                                        <div class="reviewer-sub-details mb-2">
-                                            <div class="country flex gap-2 items-center">
-                                                <img class="country-flag w-8"
-                                                    src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png"
-                                                    alt="US" loading="lazy">
-                                                <div class="text-slate-600 text-base">
-                                                    United States
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </header>
-                                    <div class="review-description">
-                                        <p class="text-lg">Seller communicated clearly to set expectations, worked
-                                            with
-                                            me to get the result I was looking for. Highly recommend! The project I
-                                            asked for was converting my wifes character from an MMO we play into the
-                                            anime style graphic, and I got exactly what I was looking for. I'm going
-                                            to
-                                            frame a print of it as one of my wifes Christmas gifts.</p>
-                                    </div>
-                                    <span class="summarize flex justify-end">
-                                        <time class="text-base text-slate-600">
-                                            Published 2 months ago
-                                        </time>
-                                    </span>
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- ACA TERMINA REVIEW -->
-                    </div>
-                </div>
-
-                <div>
-                    <h2
-                        class="font-bold text-6xl 2xl:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 mx-auto mb-4">
-                        Skills
-                    </h2>
-                    <ul class="text-2xl leading-8 font-medium">
-                        <li>
-                            <img src="./assets/skillslogo/js.webp" alt="bootstrap" class="w-6 h-auto inline-block">
-                            Javascript
-                            <progress value="70" max="100"></progress>
-                        </li>
-                        <li>
-                            <img src="./assets/skillslogo/vue.webp" alt="bootstrap" class="w-6 h-auto inline-block">
-                            Vue JS
-                            <progress value="70" max="100"></progress>
-                        </li>
-                        <li>
-                            <img src="./assets/skillslogo/react.webp" alt="bootstrap" class="w-6 h-auto inline-block">
-                            React JS
-                            <progress value="20" max="100"></progress>
-                        </li>
-                        <li>
-                            <img src="./assets/skillslogo/tailwind.webp" alt="bootstrap"
-                                class="w-7 h-auto inline-block">
-                            Tailwind CSS
-                            <progress value="80" max="100"></progress>
-                        </li>
-                        <li>
-                            <img src="./assets/skillslogo/html5.webp" alt="bootstrap" class="w-6 h-auto inline-block">
-                            HTML5
-                            <progress value="80" max="100"></progress>
-                        </li>
-                        <li>
-                            <img src="./assets/skillslogo/firebase.webp" alt="bootstrap"
-                                class="w-6 h-auto inline-block">
-                            Firebase
-                            <progress value="50" max="100"></progress>
-                        </li>
-                        <li>
-                            <img src="./assets/skillslogo/vuetify.webp" alt="bootstrap" class="w-6 h-auto inline-block">
-                            Vuetify
-                            <progress value="70" max="100"></progress>
-                        </li>
-                        <li>
-                            <img src="./assets/skillslogo/bootstrap.webp" alt="bootstrap"
-                                class="w-7 h-auto inline-block">
-                            Bootstrap
-                            <progress value="80" max="100"></progress>
-                        </li>
-                        <li>
-                            <img src="./assets/skillslogo/css3.webp" alt="bootstrap" class="w-6 h-auto inline-block">
-                            CSS 3
-                            <progress value="70" max="100"></progress>
-                        </li>
-                        <li>
-                            <img src="./assets/skillslogo/git.webp" alt="bootstrap" class="w-6 h-auto inline-block">
-                            Git
-                            <progress value="65" max="100"></progress>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <!-- MY PORTFOLIO SECTION -->
-            <section id="myPortfolio">
+            </div>
+        </section>
+        <!-- ABOUT ME SECTION -->
+        <section id="aboutMe"
+            class="grid grid-flow-row lg:grid-flow-col lg:content-center lg:mx-auto lg:w-3/4 gap-8">
+            <div>
                 <h2
-                    class="font-bold 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 2xl:px-16 2xl:py-0 mb-4 2xl:mb-0">
-                    Portfolio</h2>
-                <article
-                    class="grid grid-flow-row md:grid-cols-2 md:grid-rows-2 2xl:grid-cols-3 2xl:grid-rows-3 content-center  2xl:px-16 2xl:py-0">
-                    <a rel="noopener noreferrer" href="https://oliprint.web.app" target="_blank"
-                        class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
-                        <div class="p-2">
-                            <img alt="oliprint" src="./assets/oliprint.webp" class="mx-auto rounded-sm" />
-                            <p>
-                                This project use Firebase to let you create an user and store your favorite products. It
-                                also let you filter products by tags.</p>
-                            <hr class="border-teal-200">
-                            <div class="flex gap-2 flex-wrap">
-                                <span class="pill">Vue JS</span>
-                                <span class="pill">TailWind CSS</span>
-                                <span class="pill">Firebase</span>
+                    class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
+                    About Me</h2>
+                <p class="text-xl inline-block font-medium mb-3">
+                    The scope of my work is a large part of the front end: RWD, Paralax scrolling, coding
+                    layouts, mobile, single page apps. (MVC), animation, CSS / JS and other work based on HTML/
+                    CSS / JS.
+                </p>
+                <p class="text-xl inline-block font-medium mb-3">
+                    I also build the applications PHP / MySQL mostly on open source systems like WordPress.
+                </p>
+                <p class="text-xl inline-block mb-4 font-medium">
+                    PSD to HTML, PSD to WordPress.
+                </p>
+
+            </div>
+            <div class="2xl:flex 2xl:flex-col">
+                <h3 class="font-bold text-5xl lg:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
+                    Experience
+                </h3>
+                <h3 class="text-3xl font-medium leading-6">Vector Artist</h3>
+                <h4 class="italic text-lg text-slate-200 mb-2">Fiverr (2020 - current)</h4>
+                <p class="text-xl mb-6">Working along my wife delivering vector artwork at Fiverr.com
+                </p>
+
+                <h3 class="text-3xl font-medium leading-6">Frontend web developer</h3>
+                <h4 class="italic text-lg text-slate-200 mb-2">Digital Thinking (2020) </h4>
+                <p class="text-xl mb-6"> Implemented responsive website, lading page and API consuming
+                    from Zoho CRM and REST apis.</p>
+
+                <h3 class="text-3xl font-medium leading-6">ERCE test encoder</h3>
+                <h4 class="italic text-lg text-slate-200 mb-2">DIGEDUCA and UNESCO Chile (2019) </h4>
+                <p class="text-xl mb-6">I worked grading and encoding the ERCE test applied in
+                    latinoamerica by Unesco</p>
+            </div>
+        </section>
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="grid grid-flow-row 2xl:grid-flow-col content-center 2xl:px-16 gap-4">
+            <div>
+                <h3 class="font-bold text-5xl lg:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
+                    Certificates
+                </h3>
+                <div class="flex flex-wrap gap-2 mb-2">
+                    <a rel="noopener noreferrer" class="certificate-pill"
+                        href="https://ude.my/UC-d517165b-0b28-4666-a9e3-dcd6c6d6d551" target="_blank">Javascript🔗</a>
+                    <a rel="noopener noreferrer"
+                        href="https://certification.templatemonster.com/certificates/a72f145f1e4eaa518ddb291b74f2dc32/"
+                        target="_blank" class="certificate-pill">HTML and CSS🔗</a>
+                    <a rel="noopener noreferrer"
+                        href="https://www.coursera.org/account/accomplishments/certificate/W2HNDFVLKPKS" target="_blank"
+                        class="certificate-pill">IT GOOGLE🔗</a>
+                    <a rel="noopener noreferrer"
+                        href="https://drive.google.com/file/d/19Toq9SGK7fJ3CW_O0Hk1JqgdS1j-1nm4/view?usp=sharing"
+                        target="_blank" class="certificate-pill">English (B1)🔗</a>
+                </div>
+
+                <div>
+                    <div class="flex flex-wrap content-center">
+                        <h3
+                            class="font-bold text-5xl lg:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
+                            Testimonials
+                        </h3>
+                        <div class="interior m-3">
+                            <a class="px-4 py-2 bg-teal-300 rounded-full text-slate-700"
+                                href="#open-modal">Disclaimer</a>
+                        </div>
+                        <div id="open-modal" class="modal-window">
+                            <div>
+                                <a href="#visitanos" title="Close" class="modal-close">&times;</a>
+                                <p>
+                                    This is just a proof of soft skills on the job I'm currently working on.
+                                </p>
                             </div>
                         </div>
-                    </a>
-                    <a rel="noopener noreferrer" href="https://ospgt.com/" target="_blank"
-                        class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
-                        <div class="p-2">
-                            <img alt="imp" src="./assets/ospgt.webp" class="mx-auto rounded-sm" />
-                            <p class="">
-                                This e-commerce site let you explore the products by categories, it implements
-                                breadcrumbs for exploring and implements Zoho to get data about your leaders.</p>
-                            <hr class="border-teal-200">
-                            <div class="flex gap-2 flex-wrap">
-                                <span class="pill">Vue JS</span>
-                                <span class="pill">Vuetify</span>
-                                <span class="pill">Zoho serverless</span>
-                                <span class="pill">API consuming</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a rel="noopener noreferrer" href="https://tengosedsportbar.web.app" target="_blank"
-                        class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
-                        <div class="p-2">
-                            <img alt="tengo sed" src="./assets/tengosed.webp" class="mx-auto rounded-sm" />
-                            <p class="">Sitio Web de un restaurante local. permite visualizar los platillos, conocer la
-                                ubicacion y ofrece distintos metodos de contacto.</p>
-                            <hr class="border-teal-200">
-                            <div class="flex gap-2 flex-wrap">
-                                <span class="pill">Vanilla JS</span>
-                                <span class="pill">Bootstrap</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a rel="noopener noreferrer" href="https://codigo502.web.app" target="_blank"
-                        class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
-                        <div class="p-2">
-                            <img alt="codigo 502" src="./assets/codigo502.webp" class="mx-auto rounded-sm" />
-                            <p class="">
-                                Esta web consume la API pantry que aloja los datos de los proximos eventos que realizara
-                                la agrupacion. Permite agregar y modificar eventos facilmente desde el sitio web.</p>
-                            <hr class="border-teal-200">
-                            <div class="flex gap-2 flex-wrap">
-                                <span class="pill">Vanilla JS</span>
-                                <span class="pill">API consuming</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a rel="noopener noreferrer" href="https://budgets-vueapp.web.app/" target="_blank"
-                        class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
-                        <div class="p-2">
-                            <img alt="budgets app" src="./assets/budgets.webp" class="mx-auto rounded-sm" />
-                            <p class="">
-                                Web App that keeps track of your expenses, you can create, delete y modify Budgets. it
-                                has persistent data due to the use of Local Storage.</p>
-                            <hr class="border-teal-200">
-                            <div class="flex gap-1 flex-wrap">
-                                <span class="pill">Vue JS</span>
-                                <span class="pill">TailWind CSS</span>
-                                <span class="pill">Local Storage</span>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-            </section>
-            <!-- CONTACT ME SECTION -->
-            <section id="contactMe" class="mb-24 2xl:mb-0">
-                <article class="2xl:px-16 2xl:py-7">
-                    <h2
-                        class="font-bold text-5xl 2xl:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 w-full">
-                        Contact me</h2>
-                    <div class="block">
-                        <a href="mailto:ericksonoliva@gmail.com" target="_blank">
-                            <img class="w-11 hover:drop-shadow-2xl" src="assets/email.webp" alt="email">
-                        </a>
-                        <h3>ericksonoliva@gmail.com</h3>
                     </div>
-                    <h3>+502 59070780</h3>
-                </article>
-            </section>
-        </main>
-    </div>
+
+                    <!-- REVIEW EMPIEZA ACA -->
+                    <div id="reviews" class="bg-slate-100 text-black rounded-lg 2xl:w-4/6  p-6">
+                        <ul class="review-list">
+                            <li class="review-item" data-impression-collected="true">
+                                <header>
+                                    <div class="reviewer-details flex items-center">
+                                        <div class="user-profile-image">
+                                            <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/01ce8986df8d9db01c3ff7aefd8ca371-645849081573186358592/JPEG_20191107_201237_6206581623774737260.jpg"
+                                                class="w-12 rounded-xl" alt="martinisal" loading="lazy">
+                                        </div>
+                                        <h5 class="text-bold text-2xl">Martinisal</h5>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+                                            <path fill="#ffbd00"
+                                                d="M7.5 0.25 L9.375 6 h5.625 L10.375 9.25 L12.25 14.875 L7.5 11.375 L2.75 14.875 L4.625 9.25 L0 6 h5.625 Z" />
+                                        </svg>
+                                        <span class="text-xl text-yellow-500 font-bold">
+                                            5
+                                        </span>
+                                    </div>
+                                    <div class="reviewer-sub-details mb-2">
+                                        <div class="country flex gap-2 items-center">
+                                            <img class="country-flag w-8"
+                                                src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png"
+                                                alt="US" loading="lazy">
+                                            <div class="text-slate-600 text-base">
+                                                United States
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="review-description">
+                                    <p class="text-lg">Seller communicated clearly to set expectations, worked
+                                        with
+                                        me to get the result I was looking for. Highly recommend! The project I
+                                        asked for was converting my wifes character from an MMO we play into the
+                                        anime style graphic, and I got exactly what I was looking for. I'm going
+                                        to
+                                        frame a print of it as one of my wifes Christmas gifts.</p>
+                                </div>
+                                <span class="summarize flex justify-end">
+                                    <time class="text-base text-slate-600">
+                                        Published 2 months ago
+                                    </time>
+                                </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ACA TERMINA REVIEW -->
+                </div>
+            </div>
+
+            <div>
+                <h2
+                    class="font-bold text-6xl 2xl:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 mx-auto mb-4">
+                    Skills
+                </h2>
+                <ul class="text-2xl leading-10 lg:leading-8 font-medium">
+                    <li>
+                        <img src="./assets/skillslogo/js.webp" alt="bootstrap" class="w-6 h-auto inline-block">
+                        Javascript
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <img src="./assets/skillslogo/vue.webp" alt="bootstrap" class="w-6 h-auto inline-block">
+                        Vue JS
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <img src="./assets/skillslogo/react.webp" alt="bootstrap" class="w-6 h-auto inline-block">
+                        React JS
+                        <progress value="20" max="100"></progress>
+                    </li>
+                    <li>
+                        <img src="./assets/skillslogo/tailwind.webp" alt="bootstrap" class="w-7 h-auto inline-block">
+                        Tailwind CSS
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <img src="./assets/skillslogo/html5.webp" alt="bootstrap" class="w-6 h-auto inline-block">
+                        HTML5
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <img src="./assets/skillslogo/firebase.webp" alt="bootstrap" class="w-6 h-auto inline-block">
+                        Firebase
+                        <progress value="50" max="100"></progress>
+                    </li>
+                    <li>
+                        <img src="./assets/skillslogo/vuetify.webp" alt="bootstrap" class="w-6 h-auto inline-block">
+                        Vuetify
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <img src="./assets/skillslogo/bootstrap.webp" alt="bootstrap" class="w-7 h-auto inline-block">
+                        Bootstrap
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <img src="./assets/skillslogo/css3.webp" alt="bootstrap" class="w-6 h-auto inline-block">
+                        CSS 3
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <img src="./assets/skillslogo/git.webp" alt="bootstrap" class="w-6 h-auto inline-block">
+                        Git
+                        <progress value="65" max="100"></progress>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- MY PORTFOLIO SECTION -->
+        <section id="myPortfolio">
+            <h2
+                class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 2xl:px-16 2xl:py-0 mb-4 2xl:mb-0">
+                Portfolio</h2>
+            <article
+                class="grid grid-flow-row md:grid-cols-2 md:grid-rows-2 2xl:grid-cols-3 2xl:grid-rows-3 content-center 2xl:px-16 2xl:py-0 gap-4 lg:gap-0">
+                <a rel="noopener noreferrer" href="https://oliprint.web.app" target="_blank"
+                    class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
+                    <div class="p-2">
+                        <img alt="oliprint" src="./assets/oliprint.webp" class="mx-auto rounded-sm" />
+                        <p>
+                            This project use Firebase to let you create an user and store your favorite products. It also let you filter  products by tags.
+                        </p>
+                        <hr class="border-teal-200">
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="pill">Vue JS</span>
+                            <span class="pill">TailWind CSS</span>
+                            <span class="pill">Firebase</span>
+                        </div>
+                    </div>
+                </a>
+                <a rel="noopener noreferrer" href="https://ospgt.com/" target="_blank"
+                    class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
+                    <div class="p-2">
+                        <img alt="imp" src="./assets/ospgt.webp" class="mx-auto rounded-sm" />
+                        <p class="">
+                            This e-commerce site let you explore the products by categories, it implements
+                            breadcrumbs for exploring and implements Zoho to get data about your leaders.</p>
+                        <hr class="border-teal-200">
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="pill">Vue JS</span>
+                            <span class="pill">Vuetify</span>
+                            <span class="pill">Zoho serverless</span>
+                            <span class="pill">API consuming</span>
+                        </div>
+                    </div>
+                </a>
+                <a rel="noopener noreferrer" href="https://tengosedsportbar.web.app" target="_blank"
+                    class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
+                    <div class="p-2">
+                        <img alt="tengo sed" src="./assets/tengosed.webp" class="mx-auto rounded-sm" />
+                        <p class="">Sitio Web de un restaurante local. permite visualizar los platillos, conocer la
+                            ubicacion y ofrece distintos metodos de contacto.</p>
+                        <hr class="border-teal-200">
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="pill">Vanilla JS</span>
+                            <span class="pill">Bootstrap</span>
+                        </div>
+                    </div>
+                </a>
+                <a rel="noopener noreferrer" href="https://codigo502.web.app" target="_blank"
+                    class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
+                    <div class="p-2">
+                        <img alt="codigo 502" src="./assets/codigo502.webp" class="mx-auto rounded-sm" />
+                        <p class="">
+                            Esta web consume la API pantry que aloja los datos de los proximos eventos que realizara
+                            la agrupacion. Permite agregar y modificar eventos facilmente desde el sitio web.</p>
+                        <hr class="border-teal-200">
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="pill">Vanilla JS</span>
+                            <span class="pill">API consuming</span>
+                        </div>
+                    </div>
+                </a>
+                <a rel="noopener noreferrer" href="https://budgets-vueapp.web.app/" target="_blank"
+                    class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
+                    <div class="p-2">
+                        <img alt="budgets app" src="./assets/budgets.webp" class="mx-auto rounded-sm" />
+                        <p class="">
+                            Web App that keeps track of your expenses, you can create, delete y modify Budgets. it
+                            has persistent data due to the use of Local Storage.</p>
+                        <hr class="border-teal-200">
+                        <div class="flex gap-1 flex-wrap">
+                            <span class="pill">Vue JS</span>
+                            <span class="pill">TailWind CSS</span>
+                            <span class="pill">Local Storage</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </section>
+        <!-- CONTACT ME SECTION -->
+        <section id="contactMe" class="mb-20 2xl:mb-0">
+            <article class="2xl:px-16 2xl:py-7">
+                <h2
+                    class="font-bold text-5xl 2xl:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 w-full">
+                    Contact me</h2>
+                <div class="flex p-4 gap-2">
+                    <a href="mailto:ericksonoliva@gmail.com" target="_blank">
+                        <img class="w-6 hover:drop-shadow-2xl" src="assets/email.webp" alt="email">
+                    </a>
+                    <h3 class="text-xl">ericksonoliva@gmail.com</h3>
+                </div>
+                <h3 class="text-xl">+502 59070780</h3>
+            </article>
+        </section>
+    </main>
     <footer
-        class="backdrop-blur-md bg-opacity-50 bg-slate-700  font-semibold fixed bottom-0 2xl:hidden w-full px-4 pt-4 pb-5 flex justify-around md:text-xl border-teal-400 border-t-2">
+        class="backdrop-blur-md bg-opacity-50 bg-slate-700  font-semibold fixed bottom-0 2xl:hidden w-full px-4 pt-4 pb-5 flex justify-around md:text-xl border-teal-400 border-t-4">
         <a href="#home" class="text-2xl border-teal-400 border-2 p-2 rounded-full">
             <img src="assets/navbarlogo/home.svg" alt="home">
         </a>
