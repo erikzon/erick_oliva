@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <nav class="hidden fixed 2xl:flex 2xl:flex-col 2xl:justify-around h-screen px-14 py-24">
+        <nav class="hidden fixed lg:flex flex-col justify-around h-screen px-8 2xl:px-14 py-24">
             <a href="#home" class="">
                 <img src="assets/navbarlogo/home.svg" width="35" height="35" alt="home" class="nav-items">
             </a>
@@ -36,13 +36,14 @@
     </header>
     <main class="my-container">
         <!-- HOME SECTION -->
-        <section id="home" class="grid grid-flow-row 2xl:grid-flow-col content-center">
+        <section id="home" class="grid grid-flow-row lg:grid-flow-col content-center">
             <div>
-                <img src="assets/me.webp" alt="Erick Oliva Front-End" class="rounded-full w-4/6 mx-auto">
+                <img src="assets/me.webp" alt="Erick Oliva Front-End"
+                    class="rounded-full w-4/6 sm:w-3/6 lg:w-4/6 mx-auto">
             </div>
             <div>
                 <h2 class="text-4xl font-semibold">Hello</h2>
-                <h1 class="text-7xl lg:text-8xl font-bold drop-shadow-lg">I'm Erick</h1>
+                <h1 class="text-7xl 2xl:text-8xl font-bold drop-shadow-lg">I'm Erick</h1>
                 <p class="bg-teal-500 text-2xl lg:text-4xl py-1 mb-6 lg:mb-12 px-4 text-slate-800 font-semibold">
                     I'm a Frontend developer</p>
                 <p class="text-2xl inline-block leading-10 font-medium">
@@ -72,7 +73,7 @@
         </section>
         <!-- ABOUT ME SECTION -->
         <section id="aboutMe"
-            class="grid grid-flow-row lg:grid-flow-col lg:content-center lg:mx-auto lg:w-3/4 gap-8">
+            class="grid grid-flow-row lg:grid-flow-col lg:content-center lg:mx-auto lg:w-4/5 2xl:w-3/4 gap-8">
             <div>
                 <h2
                     class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
@@ -88,10 +89,10 @@
                 <p class="text-xl inline-block mb-4 font-medium">
                     PSD to HTML, PSD to WordPress.
                 </p>
-
             </div>
-            <div class="2xl:flex 2xl:flex-col">
-                <h3 class="font-bold text-5xl lg:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
+            <div>
+                <h3
+                    class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
                     Experience
                 </h3>
                 <h3 class="text-3xl font-medium leading-6">Vector Artist</h3>
@@ -111,12 +112,14 @@
             </div>
         </section>
         <!-- SKILLS SECTION -->
-        <section id="skills" class="grid grid-flow-row 2xl:grid-flow-col content-center 2xl:px-16 gap-4">
-            <div>
-                <h3 class="font-bold text-5xl lg:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
+        <section id="skills"
+            class="grid grid-flow-row lg:grid-flow-col lg:grid-cols-3 content-center lg:pl-20 2xl:px-32 gap-4">
+            <div class="lg:col-span-2">
+                <h3
+                    class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
                     Certificates
                 </h3>
-                <div class="flex flex-wrap gap-2 mb-2">
+                <div class="flex flex-wrap gap-2 mb-2 content-center">
                     <a rel="noopener noreferrer" class="certificate-pill"
                         href="https://ude.my/UC-d517165b-0b28-4666-a9e3-dcd6c6d6d551" target="_blank">Javascript🔗</a>
                     <a rel="noopener noreferrer"
@@ -131,27 +134,13 @@
                 </div>
 
                 <div>
-                    <div class="flex flex-wrap content-center">
-                        <h3
-                            class="font-bold text-5xl lg:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
-                            Testimonials
-                        </h3>
-                        <div class="interior m-3">
-                            <a class="px-4 py-2 bg-teal-300 rounded-full text-slate-700"
-                                href="#open-modal">Disclaimer</a>
-                        </div>
-                        <div id="open-modal" class="modal-window">
-                            <div>
-                                <a href="#visitanos" title="Close" class="modal-close">&times;</a>
-                                <p>
-                                    This is just a proof of soft skills on the job I'm currently working on.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <h3
+                        class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
+                        Testimonials
+                    </h3>
 
                     <!-- REVIEW EMPIEZA ACA -->
-                    <div id="reviews" class="bg-slate-100 text-black rounded-lg 2xl:w-4/6  p-6">
+                    <div id="reviews" class="bg-slate-100 text-black rounded-lg 2xl:w-4/6 lg:w-5/6 lg:mx-auto p-6 mb-2">
                         <ul class="review-list">
                             <li class="review-item" data-impression-collected="true">
                                 <header>
@@ -199,15 +188,28 @@
                         </ul>
                     </div>
                     <!-- ACA TERMINA REVIEW -->
+                    <div class="interior flex">
+                        <a class="px-4 py-1 bg-teal-300 rounded-full text-slate-700 mx-auto" href="#open-modal">
+                            Disclaimer
+                        </a>
+                    </div>
+                    <div id="open-modal" class="modal-window">
+                        <div>
+                            <a href="#visitanos" title="Close" class="modal-close">&times;</a>
+                            <p>
+                                This is just a proof of soft skills on the job I'm currently working on.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div>
                 <h2
-                    class="font-bold text-6xl 2xl:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 mx-auto mb-4">
+                    class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mx-auto mb-4">
                     Skills
                 </h2>
-                <ul class="text-2xl leading-10 lg:leading-8 font-medium">
+                <ul class="text-2xl lg:text-lg 2xl:text-2xl leading-10 lg:leading-7 2xl:leading-8 font-medium">
                     <li>
                         <img src="./assets/skillslogo/js.webp" alt="bootstrap" class="w-6 h-auto inline-block">
                         Javascript
@@ -264,16 +266,18 @@
         <!-- MY PORTFOLIO SECTION -->
         <section id="myPortfolio">
             <h2
-                class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 2xl:px-16 2xl:py-0 mb-4 2xl:mb-0">
+                class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 lg:mb-0 lg:py-4 lg:pl-16  ">
                 Portfolio</h2>
-            <article
-                class="grid grid-flow-row md:grid-cols-2 md:grid-rows-2 2xl:grid-cols-3 2xl:grid-rows-3 content-center 2xl:px-16 2xl:py-0 gap-4 lg:gap-0">
+            <article class=" grid grid-flow-row md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2
+                content-center gap-4 lg:gap-0 lg:pl-20 lg:py-0 ">
                 <a rel="noopener noreferrer" href="https://oliprint.web.app" target="_blank"
-                    class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
+                    class="hover:bg-teal-600 box-border rounded-md bg-teal-600 lg:bg-transparent">
                     <div class="p-2">
-                        <img alt="oliprint" src="./assets/oliprint.webp" class="mx-auto rounded-sm" />
-                        <p>
-                            This project use Firebase to let you create an user and store your favorite products. It also let you filter  products by tags.
+                        <img alt="oliprint" src="./assets/oliprint.webp"
+                            class="mx-auto rounded-sm lg:w-5/6 2xl:w-auto" />
+                        <p class="lg:text-sm 2xl:text-base">
+                            This project use Firebase to let you create an user and store your favorite products. It
+                            also let you filter products by tags.
                         </p>
                         <hr class="border-teal-200">
                         <div class="flex gap-2 flex-wrap">
@@ -284,26 +288,28 @@
                     </div>
                 </a>
                 <a rel="noopener noreferrer" href="https://ospgt.com/" target="_blank"
-                    class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
+                    class="hover:bg-teal-600 box-border rounded-md bg-teal-600 lg:bg-transparent">
                     <div class="p-2">
-                        <img alt="imp" src="./assets/ospgt.webp" class="mx-auto rounded-sm" />
-                        <p class="">
-                            This e-commerce site let you explore the products by categories, it implements
-                            breadcrumbs for exploring and implements Zoho to get data about your leaders.</p>
+                        <img alt="imp" src="./assets/ospgt.webp" class="mx-auto rounded-sm lg:w-5/6 2xl:w-auto" />
+                        <p class="lg:text-sm 2xl:text-base">
+                            This e-commerce site let you explore the products by categories, it implements Zoho to get
+                            data about your leaders.</p>
                         <hr class="border-teal-200">
                         <div class="flex gap-2 flex-wrap">
                             <span class="pill">Vue JS</span>
                             <span class="pill">Vuetify</span>
-                            <span class="pill">Zoho serverless</span>
+                            <span class="pill">Zoho CRM</span>
                             <span class="pill">API consuming</span>
                         </div>
                     </div>
                 </a>
                 <a rel="noopener noreferrer" href="https://tengosedsportbar.web.app" target="_blank"
-                    class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
+                    class="hover:bg-teal-600 box-border rounded-md bg-teal-600 lg:bg-transparent">
                     <div class="p-2">
-                        <img alt="tengo sed" src="./assets/tengosed.webp" class="mx-auto rounded-sm" />
-                        <p class="">Sitio Web de un restaurante local. permite visualizar los platillos, conocer la
+                        <img alt="tengo sed" src="./assets/tengosed.webp"
+                            class="mx-auto rounded-sm lg:w-5/6 2xl:w-auto" />
+                        <p class="lg:text-sm 2xl:text-base">Sitio Web de un restaurante local. permite visualizar los
+                            platillos, conocer la
                             ubicacion y ofrece distintos metodos de contacto.</p>
                         <hr class="border-teal-200">
                         <div class="flex gap-2 flex-wrap">
@@ -313,10 +319,11 @@
                     </div>
                 </a>
                 <a rel="noopener noreferrer" href="https://codigo502.web.app" target="_blank"
-                    class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
+                    class="hover:bg-teal-600 box-border rounded-md bg-teal-600 lg:bg-transparent">
                     <div class="p-2">
-                        <img alt="codigo 502" src="./assets/codigo502.webp" class="mx-auto rounded-sm" />
-                        <p class="">
+                        <img alt="codigo 502" src="./assets/codigo502.webp"
+                            class="mx-auto rounded-sm lg:w-5/6 2xl:w-auto" />
+                        <p class="lg:text-sm 2xl:text-base">
                             Esta web consume la API pantry que aloja los datos de los proximos eventos que realizara
                             la agrupacion. Permite agregar y modificar eventos facilmente desde el sitio web.</p>
                         <hr class="border-teal-200">
@@ -327,10 +334,11 @@
                     </div>
                 </a>
                 <a rel="noopener noreferrer" href="https://budgets-vueapp.web.app/" target="_blank"
-                    class="hover:bg-teal-600 box-border rounded-md bg-teal-600 2xl:bg-transparent">
+                    class="hover:bg-teal-600 box-border rounded-md bg-teal-600 lg:bg-transparent">
                     <div class="p-2">
-                        <img alt="budgets app" src="./assets/budgets.webp" class="mx-auto rounded-sm" />
-                        <p class="">
+                        <img alt="budgets app" src="./assets/budgets.webp"
+                            class="mx-auto rounded-sm lg:w-5/6 2xl:w-auto" />
+                        <p class="lg:text-sm 2xl:text-base">
                             Web App that keeps track of your expenses, you can create, delete y modify Budgets. it
                             has persistent data due to the use of Local Storage.</p>
                         <hr class="border-teal-200">
@@ -342,10 +350,11 @@
                     </div>
                 </a>
             </article>
+
         </section>
         <!-- CONTACT ME SECTION -->
-        <section id="contactMe" class="mb-20 2xl:mb-0">
-            <article class="2xl:px-16 2xl:py-7">
+        <section id="contactMe" class="mb-20 2xl:mb-0 flex flex-col content-center 2xl:px-16 2xl:py-7">
+            <div class="mx-auto">
                 <h2
                     class="font-bold text-5xl 2xl:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 w-full">
                     Contact me</h2>
@@ -356,11 +365,11 @@
                     <h3 class="text-xl">ericksonoliva@gmail.com</h3>
                 </div>
                 <h3 class="text-xl">+502 59070780</h3>
-            </article>
+            </div>
         </section>
     </main>
     <footer
-        class="backdrop-blur-md bg-opacity-50 bg-slate-700  font-semibold fixed bottom-0 2xl:hidden w-full px-4 pt-4 pb-5 flex justify-around md:text-xl border-teal-400 border-t-4">
+        class="backdrop-blur-md bg-opacity-50 bg-slate-700 font-semibold fixed bottom-0 lg:hidden w-full px-4 pt-4 pb-5 flex justify-around md:text-xl border-teal-400 border-t-4">
         <a href="#home" class="text-2xl border-teal-400 border-2 p-2 rounded-full">
             <img src="assets/navbarlogo/home.svg" alt="home">
         </a>
