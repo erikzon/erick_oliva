@@ -81,5 +81,5 @@ progress::-webkit-progress-value {
 }
 
 .certificate-pill {
-    @apply px-3 py-1 text-xl bg-slate-50 rounded-full text-teal-600 underline;
+    @apply px-3 py-1 text-lg lg:text-xl bg-slate-50 rounded-full text-teal-600 underline;
 }
