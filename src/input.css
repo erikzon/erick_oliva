@@ -17,7 +17,12 @@ body {
 }
 
 .nav-items {
-    @apply border-b-2 border-transparent hover:border-white;    
+    @apply border-b-2 border-transparent ;    
+}
+
+.nav-item-active{
+    @apply border-white;
+    filter:brightness(0) saturate(100%) invert(72%) sepia(95%) saturate(239%) hue-rotate(114deg) brightness(95%) contrast(98%);
 }
 
 .nav-items:hover{
@@ -25,7 +30,7 @@ body {
 }
 
 section {
-    @apply md:h-screen px-6 py-2 2xl:pl-12 2xl:pr-4;
+    @apply md:h-screen px-6 py-2 2xl:pl-12 2xl:pr-4;    
 }
 
 .my-leading {

@@ -476,14 +476,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
-.row-span-3 {
-  grid-row: span 3 / span 3;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -653,6 +645,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-teal-400 {
   --tw-border-opacity: 1;
   border-color: rgb(45 212 191 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-teal-500 {
@@ -919,9 +916,13 @@ body {
   border-color: transparent;
 }
 
-.nav-items:hover {
+.nav-item-active {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  filter:brightness(0) saturate(100%) invert(72%) sepia(95%) saturate(239%) hue-rotate(114deg) brightness(95%) contrast(98%);
+}
+
+.nav-items:hover{
   filter:brightness(0) saturate(100%) invert(72%) sepia(95%) saturate(239%) hue-rotate(114deg) brightness(95%) contrast(98%);
 }
 
@@ -1207,10 +1208,6 @@ progress::-webkit-progress-value {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:grid-rows-3 {
-    grid-template-rows: repeat(3, minmax(0, 1fr));
-  }
-
   .lg\:content-center {
     align-content: center;
   }
@@ -1223,19 +1220,9 @@ progress::-webkit-progress-value {
     background-color: transparent;
   }
 
-  .lg\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-
-  .lg\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .lg\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  .lg\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .lg\:py-0 {
@@ -1243,39 +1230,8 @@ progress::-webkit-progress-value {
     padding-bottom: 0px;
   }
 
-  .lg\:py-7 {
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
-  }
-
-  .lg\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
-  .lg\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
   .lg\:pl-20 {
     padding-left: 5rem;
-  }
-
-  .lg\:pl-24 {
-    padding-left: 6rem;
-  }
-
-  .lg\:pl-8 {
-    padding-left: 2rem;
-  }
-
-  .lg\:pl-12 {
-    padding-left: 3rem;
-  }
-
-  .lg\:pl-1 {
-    padding-left: 0.25rem;
   }
 
   .lg\:pl-16 {
@@ -1324,6 +1280,11 @@ progress::-webkit-progress-value {
     padding-right: 3.5rem;
   }
 
+  .\32xl\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
   .\32xl\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -1332,31 +1293,6 @@ progress::-webkit-progress-value {
   .\32xl\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
-  }
-
-  .\32xl\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .\32xl\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-
-  .\32xl\:px-28 {
-    padding-left: 7rem;
-    padding-right: 7rem;
-  }
-
-  .\32xl\:px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-
-  .\32xl\:px-32 {
-    padding-left: 8rem;
-    padding-right: 8rem;
   }
 
   .\32xl\:text-8xl {

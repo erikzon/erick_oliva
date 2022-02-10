@@ -17,21 +17,21 @@
 <body>
     <header>
         <nav class="hidden fixed lg:flex flex-col justify-around h-screen px-8 2xl:px-14 py-24">
-            <a href="#home" class="">
-                <img src="assets/navbarlogo/home.svg" width="35" height="35" alt="home" class="nav-items">
+            <a href="#home">
+                <img src="assets/navbarlogo/home.svg" width="40" height="40" alt="home" class="nav-items" id="homeNavItem">
             </a>
-            <a href="#aboutMe" class="">
-                <img src="assets/navbarlogo/me.svg" width="35" height="35" alt="me" class="nav-items">
+            <a href="#aboutMe">
+                <img src="assets/navbarlogo/me.svg" width="40" height="40" alt="me" class="nav-items" id="aboutMeNavItem">
             </a>
-            <a href="#skills" class="">
-                <img src="assets/navbarlogo/code.svg" width="35" height="35" alt="skills" class="nav-items">
+            <a href="#skills">
+                <img src="assets/navbarlogo/code.svg" width="40" height="40" alt="skills" class="nav-items" id="skillsNavItem">
             </a>
-            <a href="#myPortfolio" class="">
-                <img src="assets/navbarlogo/portfolio.svg" width="35" height="35" alt="portfolio" class="nav-items">
+            <a href="#myPortfolio">
+                <img src="assets/navbarlogo/portfolio.svg" width="40" height="40" alt="portfolio" class="nav-items" id="myportfolioNavItem">
             </a>
-            <a href="#contactMe" class="">
-                <img src="assets/navbarlogo/contactme.svg" width="35" height="35" alt="contact me" class="nav-items">
-            </a>
+            <!-- <a href="#contactMe">
+                <img src="assets/navbarlogo/contactme.svg" width="40" height="40" alt="contact me" class="nav-items" id="contactMeNavItem">
+            </a> -->
         </nav>
     </header>
     <main class="my-container">
@@ -266,7 +266,7 @@
         <!-- MY PORTFOLIO SECTION -->
         <section id="myPortfolio">
             <h2
-                class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 lg:mb-0 lg:py-4 lg:pl-16  ">
+                class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-4 lg:mb-0 lg:py-4 lg:pl-16  ">
                 Portfolio</h2>
             <article class=" grid grid-flow-row md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2
                 content-center gap-4 lg:gap-0 lg:pl-20 lg:py-0 ">
@@ -353,7 +353,7 @@
 
         </section>
         <!-- CONTACT ME SECTION -->
-        <section id="contactMe" class="mb-20 2xl:mb-0 flex flex-col content-center 2xl:px-16 2xl:py-7">
+        <!-- <section id="contactMe" class="mb-20 2xl:mb-0 flex flex-col content-center 2xl:px-16 2xl:py-7">
             <div class="mx-auto">
                 <h2
                     class="font-bold text-5xl 2xl:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 w-full">
@@ -366,26 +366,24 @@
                 </div>
                 <h3 class="text-xl">+502 59070780</h3>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer
         class="backdrop-blur-md bg-opacity-50 bg-slate-700 font-semibold fixed bottom-0 lg:hidden w-full px-4 pt-4 pb-5 flex justify-around md:text-xl border-teal-400 border-t-4">
-        <a href="#home" class="text-2xl border-teal-400 border-2 p-2 rounded-full">
+        <a href="#home" class="text-2xl border-white border-2 p-2 rounded-full" id="mobileHomeNavItem">
             <img src="assets/navbarlogo/home.svg" alt="home">
         </a>
-        <a href="#aboutMe" class="text-2xl border-teal-400 border-2 p-2 rounded-full">
+        <a href="#aboutMe" class="text-2xl  border-2 p-2 rounded-full" id="mobileAboutMeNavItem">
             <img src="assets/navbarlogo/me.svg" alt="me">
         </a>
-        <a href="#skills" class="text-2xl border-teal-400 border-2 p-2 rounded-full">
+        <a href="#skills" class="text-2xl border-white border-2 p-2 rounded-full" id="mobileSkillsNavItem">
             <img src="assets/navbarlogo/code.svg" alt="skills">
         </a>
-        <a href="#myPortfolio" class="text-2xl border-teal-400 border-2 p-2 rounded-full">
+        <a href="#myPortfolio" class="text-2xl border-white border-2 p-2 rounded-full" id="mobileMyportfolioNavItem">
             <img src="assets/navbarlogo/portfolio.svg" alt="portfolio">
         </a>
-        <a href="#contactMe" class="text-2xl border-teal-400 border-2 p-2 rounded-full">
-            <img src="assets/navbarlogo/contactme.svg" alt="contact me">
-        </a>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 
