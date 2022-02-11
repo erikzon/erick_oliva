@@ -66,14 +66,13 @@ const observerSkills = new IntersectionObserver(styleSkillsNavItem, {
 });
 
 const observerMyPortfolio = new IntersectionObserver(styleMyPortfolioNavItem, {
-    root: null,    rootMargin: '0px 0px 0px 0px',    threshold: 0.5
+    root: null,    rootMargin: '0px 0px 0px 0px',    threshold: 0.45
 });
 
 observerHome.observe(sectionHome);
 observerAboutMe.observe(sectionAboutMe);
 observerSkills.observe(sectionSkills);
 observerMyPortfolio.observe(sectionMyPortfolio);
-// observer.observe(sectionContactMe);
 
 /*
 let en_US = {

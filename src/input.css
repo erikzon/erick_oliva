@@ -17,12 +17,21 @@ body {
 }
 
 .nav-items {
-    @apply border-b-2 border-transparent ;    
+    @apply border-b-2 border-transparent;
+    transform: scale(0.9);
+	transition: .3s ease-in-out all;    
+}
+
+.nav-items-mobile{
+    @apply text-2xl border-white border-2 p-2 rounded-full;
+    transform: scale(0.9);
+	transition: .3s ease-in-out all; 
 }
 
 .nav-item-active{
     @apply border-white;
     filter:brightness(0) saturate(100%) invert(72%) sepia(95%) saturate(239%) hue-rotate(114deg) brightness(95%) contrast(98%);
+    transform: scale(1.1);
 }
 
 .nav-items:hover{
@@ -30,7 +39,7 @@ body {
 }
 
 section {
-    @apply md:h-screen px-6 py-2 2xl:pl-12 2xl:pr-4;    
+    @apply lg:h-screen px-6 py-2 2xl:pl-12 2xl:pr-4;    
 }
 
 .my-leading {
@@ -38,25 +47,25 @@ section {
 }
 
 /* MODAL */
-.modal-window {
-    @apply fixed backdrop-blur-sm drop-shadow-xl bg-opacity-25 top-0 right-0 bottom-0 left-0 z-[999] invisible opacity-0 pointer-events-none transition-all ease-linear;    
-}
+    .modal-window {
+        @apply fixed backdrop-blur-sm bg-slate-600 bg-opacity-25 drop-shadow-xl top-0 right-0 bottom-0 left-0 z-[999] invisible opacity-0 pointer-events-none transition-all ease-linear;    
+    }
 
-.modal-window:target {
-    @apply visible opacity-100 pointer-events-auto;
-}
+    .modal-window:target {
+        @apply visible opacity-100 pointer-events-auto;
+    }
 
-.modal-window > div {
-    @apply w-2/4 absolute top-1/2 left-1/2 p-2 bg-white text-teal-800 rounded-md translate-x-minus50 translate-y-minus50 h-32 flex content-center items-center justify-around;
-}
+    .modal-window > div {
+        @apply w-4/5 lg:w-2/4 absolute top-1/2 left-1/2 p-2 bg-white text-teal-800 rounded-md translate-x-minus50 translate-y-minus50 h-32 flex text-center content-center items-center justify-around;
+    }
 
-.modal-close {
-    @apply text-black bg-teal-400 absolute right-0 top-0 text-center px-3 py-3 text-xl rounded-full;
-}
+    .modal-close {
+        @apply text-black bg-teal-400 absolute right-0 top-0 text-center rounded-tr-md px-3 text-3xl ;
+    }
 
-.modal-close:hover {
-    @apply text-white px-3 py-3;
-}
+    .modal-close:hover {
+        @apply text-white;
+    }
 /* END OF MODAL */
 
 hr {
