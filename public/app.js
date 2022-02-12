@@ -1,30 +1,18 @@
+const getTestimonials = fetch("./assets/testimonials.json")
+    .then(response => response.json())
+    .then(data => {
+        return data
+    })
+
+    let testimonialsLoaded;
+
+const asignTestimonials = async () => {
+    testimonialsLoaded = await getTestimonials;
+    console.log(testimonialsLoaded);
+}
+asignTestimonials();
+console.log(testimonialsLoaded);
 /*
-let en_US = {
-    greetingTitle: "Hi! Erick here",
-    whatiamTitle: "I'm a Front-end Developer",
-    whatidoParagraph: "I build awesome websites, I'm from Guatemala.",
-    portfolioTitle: "Portfolio",
-    aboutmeTitle: "About me",
-    aboutmeParagraph: "I'm currently a computer science student at Universidad Mariano Galvez",
-    certificatesTitle: "Certificates",
-    certificatescontent:"",
-    skills: "Skills",
-    skillscontent: "HTML5, CSS, JavaScript, Vue, Vuex, Vuetify, Firebase, Tailwind, Bootstrap, Git"
-}
-
-let es_ES = {
-    greetingTitle: "Erick Oliva",
-    whatiamTitle: "Front-end Developer",
-    whatidoParagraph: "Dessarollo sitios web, resido en Guatemala.",
-    portfolioTitle: "Portafolio",
-    aboutmeTitle: "Acerca de mi",
-    aboutmeParagraph: "Soy estudiante de 3er año en Ing. en Sistemas en la Universidad Mariano Galvez",
-    certificatesTitle: "Certificados",
-    certificatescontent:"",
-    skills: "Habilidades",
-    skillscontent: "HTML5, CSS, JavaScript, Vue, Vuex, Vuetify, Firebase, Tailwind, Bootstrap, Git"
-}
-
 let lang = es_ES;
 
 function changeLanguage(language) {

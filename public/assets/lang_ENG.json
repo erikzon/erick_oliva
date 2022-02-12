@@ -1,0 +1,12 @@
+{
+    "greetingTitle": "Hi! Erick here",
+    "whatiamTitle": "I'm a Front-end Developer",
+    "whatidoParagraph": "I build awesome websites, I'm from Guatemala.",
+    "portfolioTitle": "Portfolio",
+    "aboutmeTitle": "About me",
+    "aboutmeParagraph": "I'm currently a computer science student at Universidad Mariano Galvez",
+    "certificatesTitle": "Certificates",
+    "certificatescontent": "",
+    "skills": "Skills",
+    "skillscontent": "HTML5, CSS, JavaScript, Vue, Vuex, Vuetify, Firebase, Tailwind, Bootstrap, Git"
+  }
