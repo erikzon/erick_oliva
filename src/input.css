@@ -38,6 +38,14 @@ body {
     filter:brightness(0) saturate(100%) invert(72%) sepia(95%) saturate(239%) hue-rotate(114deg) brightness(95%) contrast(98%);
 }
 
+.fadeOut{
+    opacity: 0;
+}
+
+.fadeIn{
+    opacity: 100;
+}
+
 section {
     @apply lg:h-screen px-6 py-2 2xl:pl-12 2xl:pr-4;    
 }

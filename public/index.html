@@ -18,16 +18,20 @@
     <header>
         <nav class="hidden fixed lg:flex flex-col justify-around h-screen px-8 2xl:px-14 py-24">
             <a href="#home">
-                <img src="assets/navbarlogo/home.svg" width="40" height="40" alt="home" class="nav-items" id="homeNavItem">
+                <img src="assets/navbarlogo/home.svg" width="40" height="40" alt="home" class="nav-items"
+                    id="homeNavItem">
             </a>
             <a href="#aboutMe">
-                <img src="assets/navbarlogo/me.svg" width="40" height="40" alt="me" class="nav-items" id="aboutMeNavItem">
+                <img src="assets/navbarlogo/me.svg" width="40" height="40" alt="me" class="nav-items"
+                    id="aboutMeNavItem">
             </a>
             <a href="#skills">
-                <img src="assets/navbarlogo/code.svg" width="40" height="40" alt="skills" class="nav-items" id="skillsNavItem">
+                <img src="assets/navbarlogo/code.svg" width="40" height="40" alt="skills" class="nav-items"
+                    id="skillsNavItem">
             </a>
             <a href="#myPortfolio">
-                <img src="assets/navbarlogo/portfolio.svg" width="40" height="40" alt="portfolio" class="nav-items" id="myportfolioNavItem">
+                <img src="assets/navbarlogo/portfolio.svg" width="40" height="40" alt="portfolio" class="nav-items"
+                    id="myportfolioNavItem">
             </a>
             <!-- <a href="#contactMe">
                 <img src="assets/navbarlogo/contactme.svg" width="40" height="40" alt="contact me" class="nav-items" id="contactMeNavItem">
@@ -133,23 +137,28 @@
                         target="_blank" class="certificate-pill">English (B1)🔗</a>
                 </div>
 
-                <div>
+                <div class="2xl:mt-12">
                     <h3
                         class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
                         Testimonials
                     </h3>
 
                     <!-- REVIEW EMPIEZA ACA -->
-                    <div id="reviews" class="bg-slate-100 text-black rounded-lg 2xl:w-4/6 lg:w-5/6 lg:mx-auto p-6 mb-2">
-                        <ul class="review-list">
-                            <li class="review-item" data-impression-collected="true">
+                    <div id="reviews"
+                        class=" bg-slate-100 text-black rounded-lg 2xl:w-4/6 lg:w-5/6 lg:mx-auto py-2 mb-2 flex">
+                        <button
+                            class="p-4 text-slate-800 font-bold text-4xl transition ease-in-out delay-150  hover:scale-125 duration-300"
+                            id="nextTestimonial">&lt;</button>
+                        <ul class="review-list grow">
+                            <li id="review-item" class="transition-all duration-200">
                                 <header>
                                     <div class="reviewer-details flex items-center">
                                         <div>
                                             <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/01ce8986df8d9db01c3ff7aefd8ca371-645849081573186358592/JPEG_20191107_201237_6206581623774737260.jpg"
-                                                class="w-12 rounded-xl" id="user-profile-image" alt="martinisal" loading="lazy">
+                                                class="w-12 rounded-xl" id="user-profile-image" alt="user photo"
+                                                loading="lazy">
                                         </div>
-                                        <h5 class="text-bold text-2xl" id="author">Martinisal</h5>
+                                        <h5 class="text-bold text-2xl mx-2" id="author">Martinisal</h5>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
                                             <path fill="#ffbd00"
                                                 d="M7.5 0.25 L9.375 6 h5.625 L10.375 9.25 L12.25 14.875 L7.5 11.375 L2.75 14.875 L4.625 9.25 L0 6 h5.625 Z" />
@@ -170,7 +179,8 @@
                                     </div>
                                 </header>
                                 <div>
-                                    <p class="text-lg" id="review-description">Seller communicated clearly to set expectations, worked
+                                    <p class="text-lg" id="review-description">Seller communicated clearly to set
+                                        expectations, worked
                                         with
                                         me to get the result I was looking for. Highly recommend! The project I
                                         asked for was converting my wifes character from an MMO we play into the
@@ -186,6 +196,7 @@
                                 </span>
                             </li>
                         </ul>
+                        <button class="p-4 text-slate-800 font-bold text-4xl transition ease-in-out delay-150  hover:scale-125 duration-300" id="previousTestimonial">&gt;</button>
                     </div>
                     <!-- ACA TERMINA REVIEW -->
                     <div class="interior flex">
@@ -198,7 +209,10 @@
                             <a href="#visitanos" title="Close" class="modal-close">&times;</a>
                             <p>
                                 This is just a proof of soft skills on the job I'm currently working on.
-                                These reviews can be found at my <a href="https://www.fiverr.com/erick_oliva/do-some-outstanding-vector-of-any-anime-image-you-provide-me" class="underline underline-offset-2 font-bold">Fiverr</a> site along with more than 300 reviews.
+                                These reviews can be found at my <a
+                                    href="https://www.fiverr.com/erick_oliva/do-some-outstanding-vector-of-any-anime-image-you-provide-me"
+                                    class="underline underline-offset-2 font-bold">Fiverr</a> site along with more than
+                                300 reviews.
                             </p>
                         </div>
                     </div>
@@ -385,7 +399,6 @@
         </a>
     </footer>
     <script src="app.js"></script>
-    <script src="IntersectionAnimations.js"></script>
 </body>
 
 
