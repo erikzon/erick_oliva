@@ -1092,6 +1092,8 @@ progress::-webkit-progress-value {
   border-radius: 1rem;
   --tw-bg-opacity: 1;
   background-color: rgb(153 246 228 / var(--tw-bg-opacity));
+  -webkit-transition: 1s ease-in-out all;
+  transition: 1s ease-in-out all;
 }
 
 .pill {

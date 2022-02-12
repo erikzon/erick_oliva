@@ -86,6 +86,7 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
     @apply bg-teal-200 rounded-2xl;
+    transition: 1s ease-in-out all; 
 }
 
 .pill {
