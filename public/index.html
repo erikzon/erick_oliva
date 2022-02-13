@@ -33,9 +33,6 @@
                 <img src="assets/navbarlogo/portfolio.svg" width="40" height="40" alt="portfolio" class="nav-items"
                     id="myportfolioNavItem">
             </a>
-            <!-- <a href="#contactMe">
-                <img src="assets/navbarlogo/contactme.svg" width="40" height="40" alt="contact me" class="nav-items" id="contactMeNavItem">
-            </a> -->
         </nav>
     </header>
     <main class="my-container">
@@ -44,33 +41,40 @@
             <div>
                 <img src="assets/me.webp" alt="Erick Oliva Front-End"
                     class="rounded-full w-4/6 sm:w-3/6 lg:w-4/6 mx-auto">
+                <div class="text-center pt-2 lg:hidden">
+                    <button class="font-bold px-2 font-mono disabled-button" id="english">ENG</button>
+                    <BUtton class="font-bold px-2 font-mono active-button" id="spanish">ESP</BUtton>
+                </div>
             </div>
             <div>
-                <h2 class="text-4xl font-semibold">Hello</h2>
-                <h1 class="text-7xl 2xl:text-8xl font-bold drop-shadow-lg">I'm Erick</h1>
-                <p class="bg-teal-500 text-2xl lg:text-4xl py-1 mb-6 lg:mb-12 px-4 text-slate-800 font-semibold">
-                    I'm a Frontend developer</p>
-                <p class="text-2xl inline-block leading-10 font-medium">
+                <h2 class="text-4xl font-semibold" id="txtHello">Hello</h2>
+                <h1 class="text-7xl 2xl:text-8xl font-bold" id="txtMyName">I'm Erick</h1>
+                <p class="bg-teal-500 text-2xl lg:text-4xl py-1 mb-2 lg:mb-12 px-4 text-slate-800 font-semibold"
+                    id="txtWhatIAm">
+                    I'm a Frontend developer
+                </p>
+                <p class="text-2xl inline-block lg:leading-10 font-medium" id="txtHomeP1">
                     My name is Erick Oliva, currently transitioning from Vector Artist to
-                    <span class="underline decoration-teal-500 decoration-4 underline-offset-8">
+                    <span class="underline decoration-teal-500 decoration-4 lg:underline-offset-6" id="txtHomeP2">
                         Front-End Developer.
                     </span>
-                <p class="text-2xl inline-block leading-10 mb-3 lg:mb-12 font-medium">
-                    I'm a third year CS student and I'm very excited to get into tech development.</p>
                 </p>
-                <p class="text-xl mb-0 lg:mb-4">
+                <p class="text-2xl inline-block lg:leading-10 mb-3 lg:mb-12 font-medium" id="txtHomeP3">
+                    I'm a third year CS student and I'm very excited to get into tech development.
+                </p>
+                <p class="text-xl mb-0 lg:mb-4" id="txtHomeP4">
                     Find me on:
                 </p>
                 <div class="flex gap-4 items-center mb-4 lg:mb-0">
                     <a rel="noopener noreferrer" href="https://www.linkedin.com/in/erick-oliva-0298381aa/"
                         target="_blank">
-                        <img class="w-10 hover:drop-shadow-2xl" src="assets/linkedin.webp" alt="linkedin">
+                        <img class="w-10" src="assets/linkedin.webp" alt="linkedin">
                     </a>
                     <a rel="noopener noreferrer" href="https://github.com/erikzon" target="_blank">
-                        <img class="w-10 brightness-200 hover:drop-shadow-2xl" src="assets/github.webp" alt="email">
+                        <img class="w-10 brightness-200 " src="assets/github.webp" alt="email">
                     </a>
                     <a rel="noopener noreferrer" href="https://www.fiverr.com/share/EkA4P8" target="_blank">
-                        <img class="w-10 brightness-200 hover:drop-shadow-2xl" src="assets/fiverr.webp" alt="email">
+                        <img class="w-10 brightness-200 " src="assets/fiverr.webp" alt="email">
                     </a>
                 </div>
             </div>
@@ -80,38 +84,33 @@
             class="grid grid-flow-row lg:grid-flow-col lg:content-center lg:mx-auto lg:w-4/5 2xl:w-3/4 gap-8">
             <div>
                 <h2
-                    class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
+                    class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5" id="txtAboutMeTittle">
                     About Me</h2>
-                <p class="text-xl inline-block font-medium mb-3">
-                    The scope of my work is a large part of the front end: RWD, Paralax scrolling, coding
-                    layouts, mobile, single page apps. (MVC), animation, CSS / JS and other work based on HTML/
-                    CSS / JS.
+                <p class="text-xl inline-block font-medium mb-3" id="txtAboutMeP1">
+                    The scope of my work is a large part of the front end: RWD, Paralax scrolling, coding layouts,  mobile, single page apps. (MVC), animation, CSS / JS and other work based on HTML/ CSS / JS.
                 </p>
-                <p class="text-xl inline-block font-medium mb-3">
+                <p class="text-xl inline-block font-medium mb-3" id="txtAboutMeP2">
                     I also build the applications PHP / MySQL mostly on open source systems like WordPress.
                 </p>
-                <p class="text-xl inline-block mb-4 font-medium">
+                <p class="text-xl inline-block lg:mb-4 font-medium" id="txtAboutMeP3">
                     PSD to HTML, PSD to WordPress.
                 </p>
             </div>
             <div>
                 <h3
-                    class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5">
+                    class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5" id="txtExperienceTittle">
                     Experience
                 </h3>
-                <h3 class="text-3xl font-medium leading-6">Vector Artist</h3>
-                <h4 class="italic text-lg text-slate-200 mb-2">Fiverr (2020 - current)</h4>
-                <p class="text-xl mb-6">Working along my wife delivering vector artwork at Fiverr.com
+                <h3 class="text-3xl font-medium leading-6" id="txtExperience1P1">Vector Artist</h3>
+                <h4 class="italic text-lg text-slate-200 mb-2" id="txtExperience1P2">Fiverr (2020 - current)</h4>
+                <p class="text-xl mb-6" id="txtExperience1P3">Working along my wife delivering vector artwork at Fiverr.com
                 </p>
-
-                <h3 class="text-3xl font-medium leading-6">Frontend web developer</h3>
-                <h4 class="italic text-lg text-slate-200 mb-2">Digital Thinking (2020) </h4>
-                <p class="text-xl mb-6"> Implemented responsive website, lading page and API consuming
-                    from Zoho CRM and REST apis.</p>
-
-                <h3 class="text-3xl font-medium leading-6">ERCE test encoder</h3>
-                <h4 class="italic text-lg text-slate-200 mb-2">DIGEDUCA and UNESCO Chile (2019) </h4>
-                <p class="text-xl mb-6">I worked grading and encoding the ERCE test applied in
+                <h3 class="text-3xl font-medium leading-6" id="txtExperience2P1">Frontend web developer</h3>
+                <h4 class="italic text-lg text-slate-200 mb-2" id="txtExperience2P2">Digital Thinking (2020)</h4>
+                <p class="text-xl mb-6" id="txtExperience2P3"> Implemented responsive website, lading page and API consuming from Zoho CRM and REST apis.</p>
+                <h3 class="text-3xl font-medium leading-6" id="txtExperience3P1">ERCE test encoder</h3>
+                <h4 class="italic text-lg text-slate-200 mb-2" id="txtExperience3P2">DIGEDUCA and UNESCO Chile (2019) </h4>
+                <p class="text-xl mb-6" id="txtExperience3P3">I worked grading and encoding the ERCE test applied in
                     latinoamerica by Unesco</p>
             </div>
         </section>
@@ -196,7 +195,9 @@
                                 </span>
                             </li>
                         </ul>
-                        <button class="p-4 text-slate-800 font-bold text-4xl transition ease-in-out delay-150  hover:scale-125 duration-300" id="previousTestimonial">&gt;</button>
+                        <button
+                            class="p-4 text-slate-800 font-bold text-4xl transition ease-in-out delay-150  hover:scale-125 duration-300"
+                            id="previousTestimonial">&gt;</button>
                     </div>
                     <!-- ACA TERMINA REVIEW -->
                     <div class="interior flex">
@@ -399,6 +400,7 @@
         </a>
     </footer>
     <script src="app.js"></script>
+    <script src="lang.js"></script>
 </body>
 
 

@@ -104,3 +104,11 @@ progress::-webkit-progress-value {
 .certificate-pill {
     @apply px-3 py-1  2xl:text-xl bg-slate-50 rounded-full text-teal-600 underline;
 }
+
+.disabled-button {
+    @apply bg-slate-200 text-slate-500 ;
+}
+
+.active-button{
+    @apply bg-teal-600 text-slate-100  shadow-slate-900 shadow-md;
+}

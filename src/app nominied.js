@@ -1,5 +1,6 @@
 // TESTIMONIALS LOGIC
 let carouselCount = 1;
+let testimonialInterval;
 
 async function getTestimonial(testimonial) {
     return await fetch("./assets/testimonials.json")
@@ -24,12 +25,14 @@ async function startCarousel() {
 }
 
 const nextTestimonial = () => {
+    clearInterval(testimonialInterval)
     carouselCount++
     carouselCount = carouselCount > 4 ? 0 : carouselCount
     startCarousel()
 }
 
 const previousTestimonial = () => {
+    clearInterval(testimonialInterval)
     carouselCount--
     carouselCount = carouselCount < 0 ? 4 : carouselCount
     startCarousel()
@@ -38,7 +41,7 @@ const previousTestimonial = () => {
 document.getElementById("nextTestimonial").addEventListener("click", nextTestimonial)
 document.getElementById("previousTestimonial").addEventListener("click", previousTestimonial)
 
-let testimonialInterval;
+
 
 // INTERSECTION LOGIC
 
@@ -146,34 +149,3 @@ observer.observe(sectionHome)
 observer.observe(sectionAboutMe)
 observer.observe(sectionSkills)
 observer.observe(sectionMyPortfolio)
-
-
-/*
-let lang = es_ES;
-
-function changeLanguage(language) {
-    lang = language;
-    document.getElementById("portfolioTitle").innerHTML = `${lang.portfolioTitle}`;
-    document.getElementById("whatidoParagraph").innerHTML = `${lang.whatidoParagraph}`;
-    document.getElementById("whatiamTitle").innerHTML = `${lang.whatiamTitle}`;
-    document.getElementById("greetingTitle").innerHTML = `${lang.greetingTitle}`;
-    document.getElementById("aboutmeTitle").innerHTML = `${lang.aboutmeTitle}`;
-    document.getElementById("aboutmeParagraph").innerHTML = `${lang.aboutmeParagraph}`;
-    document.getElementById("certificatesTitle").innerHTML = `${lang.certificatesTitle}`;
-    //document.getElementById("certificatescontent").innerHTML = `${lang.certificatescontent}`;
-    document.getElementById("skills").innerHTML = `${lang.skills}`;
-    document.getElementById("skillscontent").innerHTML = `${lang.skillscontent}`;
-}
-
-// set all the text at loadtime
-changeLanguage(es_ES);
-
-//language selector nav logic
-document.getElementById("english").addEventListener("click", function () {
-    changeLanguage(en_US);
-});
-
-document.getElementById("spanish").addEventListener("click", function () {
-    changeLanguage(es_ES);
-});
-*/

@@ -1,12 +1,3 @@
 {
-    "greetingTitle": "Erick Oliva",
-    "whatiamTitle": "Front-end Developer",
-    "whatidoParagraph": "Dessarollo sitios web, resido en Guatemala.",
-    "portfolioTitle": "Portafolio",
-    "aboutmeTitle": "Acerca de mi",
-    "aboutmeParagraph": "Soy estudiante de 3er año en Ing. en Sistemas en la Universidad Mariano Galvez",
-    "certificatesTitle": "Certificados",
-    "certificatescontent":"",
-    "skills": "Habilidades",
-    "skillscontent": "HTML5, CSS, JavaScript, Vue, Vuex, Vuetify, Firebase, Tailwind, Bootstrap, Git"
+    "txtHello": "Hola"
 }
