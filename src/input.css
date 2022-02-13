@@ -64,7 +64,7 @@ section {
     }
 
     .modal-window > div {
-        @apply w-4/5 lg:w-2/4 absolute top-1/2 left-1/2 p-2 bg-white text-teal-800 rounded-md translate-x-minus50 translate-y-minus50 h-32 flex text-center content-center items-center justify-around;
+        @apply w-5/6 lg:w-2/4 absolute top-1/2 left-1/2 p-2 bg-white text-teal-800 rounded-md translate-x-minus50 translate-y-minus50 h-44 flex text-center content-center items-center justify-around ;
     }
 
     .modal-close {

@@ -19,7 +19,16 @@
   "txtExperience2P3": "Implemented responsive website, lading page and API consuming from Zoho CRM and REST apis.",
   "txtExperience3P1": "ERCE test encoder",
   "txtExperience3P2": "DIGEDUCA and UNESCO Chile (2019)",
-  "txtExperience3P3": "I worked grading and encoding the ERCE test applied in latinoamerica by Unesco"
-
-
+  "txtExperience3P3": "I worked grading and encoding the ERCE test applied in latinoamerica by Unesco",
+  "txtCertificatesTittle": "Certificates",
+  "txtTestimonialsTittle": "Testimonials",
+  "txtTestimonialDisclaimer": "Disclaimer",
+  "txtTestimonialsDisclaimerP": "This is just a proof of soft skills on the job I'm currently working on. These reviews can be found at my Fiverr site along with more than 300 reviews.",
+  "txtSkillsTittle": "Skills",
+  "txtPortfolioTittle": "Portfolio",
+  "txtPortfolioP1": "This project use Firebase to let you create an user and store your favorite products. It also let you filter products by tags.",
+  "txtPortfolioP2": "This e-commerce site let you explore the products by categories, it implements Zoho to get data about your leaders.",
+  "txtPortfolioP3": "Sitio Web de un restaurante local. permite visualizar los platillos, conocer la ubicacion y ofrece distintos metodos de contacto.",
+  "txtPortfolioP4": "Esta web consume la API pantry que aloja los datos de los proximos eventos que realizara la agrupacion. Permite agregar y modificar eventos facilmente desde el sitio web.",
+  "txtPortfolioP5": "Web App that keeps track of your expenses, you can create, delete y modify Budgets. it has persistent data due to the use of Local Storage."
 }
