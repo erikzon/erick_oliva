@@ -510,14 +510,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .mb-20 {
   margin-bottom: 5rem;
 }
@@ -614,6 +606,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-around;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -624,10 +620,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-2 {
   gap: 0.5rem;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .rounded-full {
@@ -729,11 +721,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .pt-2 {
@@ -972,7 +959,7 @@ body {
 }
 
 .my-container {
-  background: linear-gradient(to right, rgb(30, 41, 59), rgba(30, 41, 59, 0.3)), url(https://grainy-gradients.vercel.app/noise.svg);
+  background: linear-gradient(to right, #1e293b, rgba(30, 41, 59, 0.3)), url(https://grainy-gradients.vercel.app/noise.svg);
 }
 
 .nav-items {
@@ -1195,14 +1182,12 @@ progress::-webkit-progress-value {
 
 .certificate-pill {
   border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   --tw-text-opacity: 1;
-  color: rgb(13 148 136 / var(--tw-text-opacity));
+  color: rgb(226 232 240 / var(--tw-text-opacity));
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
@@ -1214,23 +1199,68 @@ progress::-webkit-progress-value {
   }
 }
 
+.certificate-pill {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #202c3f, #1b2535);
+  box-shadow:  10px 10px 20px #141b26,
+             -10px -10px 20px #293750;
+}
+
 .disabled-button {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(100 116 139 / var(--tw-text-opacity));
+  color: rgb(203 213 225 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+@media (min-width: 1536px) {
+  .disabled-button {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.disabled-button {
+  border-radius: 50px;
+  background: #1e293b;
+  box-shadow: inset 10px 10px 20px #0c1018,
+            inset -10px -10px 20px hsl(217, 32%, 38%);
 }
 
 .active-button {
   --tw-bg-opacity: 1;
-  background-color: rgb(13 148 136 / var(--tw-bg-opacity));
+  background-color: rgb(94 234 212 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(241 245 249 / var(--tw-text-opacity));
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  color: rgb(51 65 85 / var(--tw-text-opacity));
   --tw-shadow-color: #0f172a;
   --tw-shadow: var(--tw-shadow-colored);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+@media (min-width: 1536px) {
+  .active-button {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.active-button{
+  border-radius: 50px;
 }
 
 .hover\:scale-125:hover {

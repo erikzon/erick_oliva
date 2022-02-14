@@ -45,6 +45,10 @@ async function changeLang(lang) {
 }
 
 // set all the text at loadtime
+document.getElementById("english").classList.remove("active-button")
+document.getElementById("english").classList.add("disabled-button")
+document.getElementById("spanish").classList.remove("disable-button")
+document.getElementById("spanish").classList.add("active-button")
 changeLang("lang_ES");
 
 //language selector nav logic
@@ -59,7 +63,7 @@ document.getElementById("english").addEventListener("click", function () {
 document.getElementById("spanish").addEventListener("click", function () {
     document.getElementById("english").classList.remove("active-button")
     document.getElementById("english").classList.add("disabled-button")
-    document.getElementById("spanish").classList.remove("disable-button")
+    document.getElementById("spanish").classList.remove("disabled-button")
     document.getElementById("spanish").classList.add("active-button")
     changeLang("lang_ES");
 });

@@ -13,7 +13,7 @@ body {
 
 .my-container {
     @apply bg-slate-800 lg:p-6;
-    background: linear-gradient(to right, rgb(30, 41, 59), rgba(30, 41, 59, 0.3)), url(https://grainy-gradients.vercel.app/noise.svg);
+    background: linear-gradient(to right, #1e293b, rgba(30, 41, 59, 0.3)), url(https://grainy-gradients.vercel.app/noise.svg);
 }
 
 .nav-items {
@@ -102,13 +102,22 @@ progress::-webkit-progress-value {
 }
 
 .certificate-pill {
-    @apply px-3 py-1  2xl:text-xl bg-slate-50 rounded-full text-teal-600 underline;
+    @apply px-3 py-1 2xl:text-xl rounded-full text-slate-200 underline ;
+    border-radius: 50px;
+background: linear-gradient(145deg, #202c3f, #1b2535);
+box-shadow:  10px 10px 20px #141b26,
+             -10px -10px 20px #293750;
 }
 
 .disabled-button {
-    @apply bg-slate-200 text-slate-500 ;
+    @apply font-bold px-4 font-mono text-xl 2xl:text-2xl transition-all duration-500 text-slate-300 ;
+    border-radius: 50px;
+    background: #1e293b;
+    box-shadow: inset 10px 10px 20px #0c1018,
+            inset -10px -10px 20px hsl(217, 32%, 38%);
 }
 
 .active-button{
-    @apply bg-teal-600 text-slate-100  shadow-slate-900 shadow-md;
+    @apply font-bold px-4 font-mono text-xl 2xl:text-2xl transition-all duration-500 bg-teal-300 text-slate-700 shadow-slate-900;
+    border-radius: 50px;
 }
