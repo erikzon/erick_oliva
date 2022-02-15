@@ -1,4 +1,8 @@
 {
+  "homeNavItem":"Home",
+  "aboutMeNavItem":"About Me",
+  "skillsNavItem":"Skills",
+  "myportfolioNavItem":"Portfolio",
   "txtHello": "Hello",
   "txtMyName": "I'm Erick",
   "txtWhatIAm": "I'm a Frontend developer",
@@ -22,13 +26,13 @@
   "txtExperience3P3": "I worked grading and encoding the ERCE test applied in latinoamerica by Unesco",
   "txtCertificatesTittle": "Certificates",
   "txtTestimonialsTittle": "Testimonials",
-  "txtTestimonialDisclaimer": "Disclaimer",
-  "txtTestimonialsDisclaimerP": "This is just a proof of soft skills on the job I'm currently working on. These reviews can be found at my Fiverr site along with more than 300 reviews.",
+  "txtTestimonialDisclaimer": "Note",
+  "txtTestimonialsDisclaimerP": "This is a proof of soft skills on the job I'm currently working. These reviews can be found at my Fiverr site along with more than 300 reviews.",
   "txtSkillsTittle": "Skills",
   "txtPortfolioTittle": "Portfolio",
-  "txtPortfolioP1": "This project use Firebase to let you create an user and store your favorite products. It also let you filter products by tags.",
-  "txtPortfolioP2": "This e-commerce site let you explore the products by categories, it implements Zoho to get data about your leaders.",
-  "txtPortfolioP3": "Sitio Web de un restaurante local. permite visualizar los platillos, conocer la ubicacion y ofrece distintos metodos de contacto.",
+  "txtPortfolioP1": "This project use Firebase to let you create an user and store your favorite products. It also let you filter products using tags.",
+  "txtPortfolioP2": "This e-commerce site let you explore the products by categories, it implements Zoho to create Leaders",
+  "txtPortfolioP3": "Restarant website, there you can explore the menu and locate the",
   "txtPortfolioP4": "Esta web consume la API pantry que aloja los datos de los proximos eventos que realizara la agrupacion. Permite agregar y modificar eventos facilmente desde el sitio web.",
   "txtPortfolioP5": "Web App that keeps track of your expenses, you can create, delete y modify Budgets. it has persistent data due to the use of Local Storage."
 }

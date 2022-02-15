@@ -17,21 +17,17 @@
 <body>
     <header>
         <nav class="hidden fixed lg:flex flex-col justify-around h-screen px-8 2xl:px-14 py-24">
-            <a href="#home">
-                <img src="assets/navbarlogo/home.svg" width="40" height="40" alt="home" class="nav-items"
-                    id="homeNavItem">
+            <a href="#home" class="vertical-rl">
+                <span class="nav-items" id="homeNavItem">Home</span>
             </a>
-            <a href="#aboutMe">
-                <img src="assets/navbarlogo/me.svg" width="40" height="40" alt="me" class="nav-items"
-                    id="aboutMeNavItem">
+            <a href="#aboutMe" class="vertical-rl">
+                <span class="nav-items" id="aboutMeNavItem">About Me</span>
             </a>
-            <a href="#skills">
-                <img src="assets/navbarlogo/code.svg" width="40" height="40" alt="skills" class="nav-items"
-                    id="skillsNavItem">
+            <a href="#skills" class="vertical-rl">
+                <span class="nav-items" id="skillsNavItem">Skills</span>
             </a>
-            <a href="#myPortfolio">
-                <img src="assets/navbarlogo/portfolio.svg" width="40" height="40" alt="portfolio" class="nav-items"
-                    id="myportfolioNavItem">
+            <a href="#myPortfolio" class="vertical-rl">
+                <span class="nav-items" id="myportfolioNavItem">Portfolio</span>
             </a>
         </nav>
         <div class="hidden fixed lg:flex gap-1 justify-around px-8">
@@ -44,10 +40,10 @@
         <section id="home" class="grid grid-flow-row lg:grid-flow-col content-center">
             <div>
                 <img src="assets/me.webp" alt="Erick Oliva Front-End"
-                    class="rounded-full w-4/6 sm:w-3/6 lg:w-4/6 mx-auto">
+                    class="rounded-full w-4/6 sm:w-3/6 lg:w-4/6 mx-auto img-me">
                 <div class="text-center pt-2 lg:hidden">
-                    <button class="font-bold px-2 font-mono disabled-button" id="english">ENG</button>
-                    <BUtton class="font-bold px-2 font-mono active-button" id="spanish">ESP</BUtton>
+                    <button class="font-bold px-2 font-mono" id="english-mobile">ENG</button>
+                    <button class="font-bold px-2 font-mono" id="spanish-mobile">ESP</BUtton>
                 </div>
             </div>
             <div>
@@ -136,7 +132,7 @@
                     id="txtCertificatesTittle">
                     Certificates
                 </h3>
-                <div class="flex flex-wrap gap-2 mb-6 content-center">
+                <div class="flex flex-wrap gap-4 mb-6 content-center">
                     <a rel="noopener noreferrer" class="certificate-pill"
                         href="https://ude.my/UC-d517165b-0b28-4666-a9e3-dcd6c6d6d551" target="_blank">Javascript🔗</a>
                     <a rel="noopener noreferrer"
@@ -192,14 +188,7 @@
                                     </div>
                                 </header>
                                 <div>
-                                    <p class="text-lg" id="review-description">Seller communicated clearly to set
-                                        expectations, worked
-                                        with
-                                        me to get the result I was looking for. Highly recommend! The project I
-                                        asked for was converting my wifes character from an MMO we play into the
-                                        anime style graphic, and I got exactly what I was looking for. I'm going
-                                        to
-                                        frame a print of it as one of my wifes Christmas gifts.</p>
+                                    <p class="text-lg" id="review-description">Best person I’ve worked with so far :)</p>
                                 </div>
                                 <span class="summarize flex justify-end">
                                     <time class="text-base text-slate-600" id="published">
@@ -382,23 +371,7 @@
                     </div>
                 </a>
             </article>
-
         </section>
-        <!-- CONTACT ME SECTION -->
-        <!-- <section id="contactMe" class="mb-20 2xl:mb-0 flex flex-col content-center 2xl:px-16 2xl:py-7">
-            <div class="mx-auto">
-                <h2
-                    class="font-bold text-5xl 2xl:text-8xl underline decoration-teal-500 decoration-4 underline-offset-8 w-full">
-                    Contact me</h2>
-                <div class="flex p-4 gap-2">
-                    <a href="mailto:ericksonoliva@gmail.com" target="_blank">
-                        <img class="w-6 hover:drop-shadow-2xl" src="assets/email.webp" alt="email">
-                    </a>
-                    <h3 class="text-xl">ericksonoliva@gmail.com</h3>
-                </div>
-                <h3 class="text-xl">+502 59070780</h3>
-            </div>
-        </section> -->
     </main>
     <footer
         class="backdrop-blur-md bg-opacity-50 bg-slate-700 font-semibold fixed bottom-0 lg:hidden w-full px-4 pt-4 pb-5 flex justify-around md:text-xl border-teal-400 border-t-4">

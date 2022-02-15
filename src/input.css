@@ -17,7 +17,7 @@ body {
 }
 
 .nav-items {
-    @apply border-b-2 border-transparent;
+    @apply border-l-2 text-lg font-bold border-transparent;
     transform: scale(0.9);
 	transition: .3s ease-in-out all;    
 }
@@ -52,6 +52,13 @@ section {
 
 .my-leading {
     line-height: 2.4rem;
+}
+
+.img-me{
+    border-radius: 50%;
+    background: #1e293b;
+    box-shadow:  12px 12px 24px #151c29,
+                 -12px -12px 24px hsl(216, 33%, 28%);
 }
 
 /* MODAL */
@@ -102,11 +109,11 @@ progress::-webkit-progress-value {
 }
 
 .certificate-pill {
-    @apply px-3 py-1 2xl:text-xl rounded-full text-slate-200 underline ;
+    @apply underline px-3 py-1 2xl:text-xl rounded-full text-slate-200 bg-white text-slate-800;
     border-radius: 50px;
-background: linear-gradient(145deg, #202c3f, #1b2535);
-box-shadow:  10px 10px 20px #141b26,
-             -10px -10px 20px #293750;
+    /* background: linear-gradient(145deg, #202c3f, #1b2535); */
+    box-shadow:  5px 5px 10px #0c1018,
+    -5px -5px 10px #30425e;
 }
 
 .disabled-button {

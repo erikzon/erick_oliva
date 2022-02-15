@@ -1,4 +1,8 @@
 {
+    "homeNavItem":"Inicio",
+    "aboutMeNavItem":"Acerca de mi",
+    "skillsNavItem":"Skills",
+    "myportfolioNavItem":"Portafolio",
     "txtHello": "Hola",
     "txtMyName": "Soy Erick oliva",
     "txtWhatIAm": "Soy Frontend developer",

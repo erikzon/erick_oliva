@@ -41,10 +41,7 @@ const previousTestimonial = () => {
 document.getElementById("nextTestimonial").addEventListener("click", nextTestimonial)
 document.getElementById("previousTestimonial").addEventListener("click", previousTestimonial)
 
-
-
 // INTERSECTION LOGIC
-
 const sectionHome = document.getElementById('home')
 const sectionAboutMe = document.getElementById('aboutMe')
 const sectionSkills = document.getElementById('skills')
