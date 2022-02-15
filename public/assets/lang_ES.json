@@ -12,7 +12,7 @@
     "txtHomeP4": "Contáctame:",
     "txtAboutMeTittle": "Acerca de mi",
     "txtAboutMeP1": "Inicie siendo profesor de computación en el año 2018.",
-    "txtAboutMeP2": "En 2020 inicie mi carrera en ingenieria en sistemas, ese mismo año aprendi HTML/CSS y Javascript por mi cuenta y desarrolle un proyecto para la empresa Digital Thinking Guatemala durante 8 meses de manera remota.",
+    "txtAboutMeP2": "En 2020 inicie mi carrera en ingenieria en sistemas, ese mismo año aprendi HTML/CSS y Javascript por mi cuenta y desarrolle un proyecto frontend para la empresa Digital Thinking Guatemala durante 8 meses de manera remota.",
     "txtAboutMeP3": "Actualmente estoy en busca de desarrollar mi potencial como desarrollador web y estoy en el constante aprendizaje totalmente abierto a adquirir nuevos conocimientos.",
     "txtExperienceTittle": "Experiencia",
     "txtExperience1P1": "Transformacion de vectores",
@@ -27,12 +27,12 @@
     "txtCertificatesTittle": "Certificados",
     "txtTestimonialsTittle": "Testimonios",
     "txtTestimonialDisclaimer": "Nota",
-    "txtTestimonialsDisclaimerP": "Esta es una prueba de habilidades blandas en mi trabajo actual. Estos reviews se pueden encontrar en mi perfil de Fiverr junto a mas de 300 reviews",
+    "txtTestimonialsDisclaimerP": "Esta es una prueba de mis habilidades blandas en mi trabajo actual. Estos se pueden encontrar en mi perfil de Fiverr junto a mas de 300 reviews",
     "txtSkillsTittle": "Skills",
     "txtPortfolioTittle": "Portafolio",
     "txtPortfolioP1": "Este proyecto utiliza Firebase como backend y Vue JS como front-end, permite crear usuarios y almacenar tus productos favoritos, tambien te permite filtrar por etiquetas",
-    "txtPortfolioP2": "Este sitio de ecommerce te permite explorar todo el inventario, se implemento Zoho CRM para administrar clientes y leaders automaticamente.",
-    "txtPortfolioP3": "Sitio Web de un restaurante local. permite visualizar los platillos, conocer la ubicacion y ofrece distintos metodos de contacto.",
+    "txtPortfolioP2": "Sitio de ecommerce te permite explorar todo el inventario, se implemento Zoho CRM para administrar clientes y leaders programaticamente.",
+    "txtPortfolioP3": "Sitio Web de un restaurante local, permite visualizar los platillos, conocer la ubicacion y ofrece distintos metodos de contacto.",
     "txtPortfolioP4": "Esta web consume la API pantry que aloja los datos de los proximos eventos que realizara la agrupacion. Permite agregar y modificar eventos facilmente desde el sitio web.",
-    "txtPortfolioP5": "Web App que te permite llevar un control de tus presupuestos y gastos, implementa un CRUD."
+    "txtPortfolioP5": "Web App desarrollado en Vue JS que te permite llevar un control de tus presupuestos y gastos, implementa un CRUD."
 }
