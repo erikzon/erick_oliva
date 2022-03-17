@@ -100,7 +100,7 @@ const styleHomeNavItem = (entry, observador) => {
                 mobileSkillsNavItem.classList.add('nav-item-active')
                 progressJS.value = 70
                 progressVue.value = 70
-                progressReact.value = 20
+                progressReact.value = 70
                 progressTailwind.value = 80
                 progressHTML.value = 80
                 progressFirebase.value = 50
