@@ -34,5 +34,6 @@
   "txtPortfolioP2": "This e-commerce site let you explore the products by categories, it implements Zoho CRM api to create Leaders programmatically",
   "txtPortfolioP3": "Restaurant website, there you can explore the menu and locate the restaurant using waze insertion",
   "txtPortfolioP4": "Implementes Pantry's API to store the next events, you can edit them easily from the webpage.",
-  "txtPortfolioP5": "Web App that keeps track of your expenses, you can create, delete and modify Budgets. It features persistent data thanks to the Local Storage API."
+  "txtPortfolioP5": "Web App that keeps track of your expenses, you can create, delete and modify Budgets. It features persistent data thanks to the Local Storage API.",
+  "txtPortfolioP6": "News website, it takes news from the Prensa Liber API"
 }

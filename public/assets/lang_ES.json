@@ -34,5 +34,6 @@
     "txtPortfolioP2": "Sitio de ecommerce te permite explorar todo el inventario, se implemento Zoho CRM para administrar clientes y leaders programaticamente.",
     "txtPortfolioP3": "Sitio Web de un restaurante local, permite visualizar los platillos, conocer la ubicacion y ofrece distintos metodos de contacto.",
     "txtPortfolioP4": "Esta web consume la API pantry que aloja los datos de los proximos eventos que realizara la agrupacion. Permite agregar y modificar eventos facilmente desde el sitio web.",
-    "txtPortfolioP5": "Web App desarrollado en Vue JS que te permite llevar un control de tus presupuestos y gastos, implementa un CRUD."
+    "txtPortfolioP5": "Web App desarrollado en Vue JS que te permite llevar un control de tus presupuestos y gastos, implementa un CRUD.",
+    "txtPortfolioP6": "Sitio Web que consume API de Prensa Libre para mostrar las ultimas noticias."
 }

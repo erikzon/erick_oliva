@@ -44,6 +44,7 @@ async function changeLang(lang) {
     document.getElementById("txtPortfolioP3").innerHTML = `${currentLang.txtPortfolioP3}`;
     document.getElementById("txtPortfolioP4").innerHTML = `${currentLang.txtPortfolioP4}`;
     document.getElementById("txtPortfolioP5").innerHTML = `${currentLang.txtPortfolioP5}`;
+    document.getElementById("txtPortfolioP6").innerHTML = `${currentLang.txtPortfolioP6}`;
 }
 
 // set all the text at loadtime
