@@ -100,7 +100,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    @apply bg-teal-200 rounded-2xl;
+    @apply bg-teal-500 rounded-2xl;
     transition: 1s ease-in-out all; 
 }
 
@@ -125,6 +125,6 @@ progress::-webkit-progress-value {
 }
 
 .active-button{
-    @apply font-bold px-4 font-mono text-xl 2xl:text-2xl transition-all duration-500 bg-teal-300 text-slate-700 shadow-slate-900;
+    @apply font-bold px-4 font-mono text-xl 2xl:text-2xl transition-all duration-500 bg-teal-500 text-slate-700 shadow-slate-900;
     border-radius: 50px;
 }
