@@ -1,0 +1,68 @@
+// i18next setup
+i18next.init({
+    lng: 'en', // default language
+    debug: true,
+    resources: {}
+});
+
+async function changeLanguage(lang) {
+    if (!i18next.hasResourceBundle(lang, 'translation')) {
+        try {
+            const response = await fetch(`./assets/${lang}.json`);
+            const translations = await response.json();
+            i18next.addResourceBundle(lang, 'translation', translations);
+        } catch (error) {
+            console.error(`Failed to load translation for ${lang}`, error);
+            return;
+        }
+    }
+
+    i18next.changeLanguage(lang, (err, t) => {
+        if (err) return console.error('something went wrong loading', err);
+        updateUI();
+        setActiveButton(lang);
+    });
+}
+
+function updateUI() {
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        element.innerHTML = i18next.t(key);
+    });
+}
+
+function setActiveButton(lang) {
+    const isEnglish = lang === 'en';
+    document.getElementById('english').classList.toggle('active-button', isEnglish);
+    document.getElementById('english').classList.toggle('disabled-button', !isEnglish);
+    document.getElementById('spanish').classList.toggle('active-button', !isEnglish);
+    document.getElementById('spanish').classList.toggle('disabled-button', isEnglish);
+    document.getElementById('english-mobile').classList.toggle('active-button', isEnglish);
+    document.getElementById('english-mobile').classList.toggle('disabled-button', !isEnglish);
+    document.getElementById('spanish-mobile').classList.toggle('active-button', !isEnglish);
+    document.getElementById('spanish-mobile').classList.toggle('disabled-button', isEnglish);
+}
+
+// Language buttons
+document.getElementById('english').addEventListener('click', () => changeLanguage('en'));
+document.getElementById('spanish').addEventListener('click', () => changeLanguage('es'));
+document.getElementById('english-mobile').addEventListener('click', () => changeLanguage('en'));
+document.getElementById('spanish-mobile').addEventListener('click', () => changeLanguage('es'));
+
+// The rest of app.js
+let testimonialInterval,carouselCount=1;async function getTestimonial(e){return await fetch("./assets/testimonials.json").then(e=>e.json()).then(t=>t[e])}async function startCarousel(){let e=await getTestimonial(carouselCount);document.getElementById("review-item").classList.add("fadeOut"),setTimeout(()=>{document.getElementById("user-profile-image").src=`${e.userProfileImage}`,document.getElementById("author").innerHTML=`${e.author}`,document.getElementById("country-flag").src=`${e.countryFlag}`,document.getElementById("country-name").innerHTML=`${e.countryName}`,document.getElementById("review-description").innerHTML=`${e.reviewDescription}`,document.getElementById("published").innerHTML=`${e.published}`,document.getElementById("review-item").classList.remove("fadeOut")},100)}const nextTestimonial=()=>{clearInterval(testimonialInterval),carouselCount=++carouselCount>4?0:carouselCount,startCarousel()},previousTestimonial=()=>{clearInterval(testimonialInterval),carouselCount=--carouselCount<0?4:carouselCount,startCarousel()};document.getElementById("nextTestimonial").addEventListener("click",nextTestimonial),document.getElementById("previousTestimonial").addEventListener("click",previousTestimonial);
+const sectionHome=document.getElementById("home"),sectionAboutMe=document.getElementById("aboutMe"),sectionSkills=document.getElementById("skills"),sectionMyPortfolio=document.getElementById("myPortfolio"),
+homeNavItem=document.querySelector('[data-i18n="homeNavItem"]'),
+aboutMeNavItem=document.querySelector('[data-i18n="aboutMeNavItem"]'),
+skillsNavItem=document.querySelector('[data-i18n="skillsNavItem"]'),
+myportfolioNavItem=document.querySelector('[data-i18n="myportfolioNavItem"]'),
+mobileHomeNavItem=document.querySelector('[data-i18n="mobileHomeNavItem"]'),
+mobileAboutMeNavItem=document.querySelector('[data-i18n="mobileAboutMeNavItem"]'),
+mobileSkillsNavItem=document.querySelector('[data-i18n="mobileSkillsNavItem"]'),
+mobileMyportfolioNavItem=document.querySelector('[data-i18n="mobileMyportfolioNavItem"]'),
+progressJS=document.getElementById("progressJS"),progressVue=document.getElementById("progressVue"),progressReact=document.getElementById("progressReact"),progressTailwind=document.getElementById("progressTailwind"),progressHTML=document.getElementById("progressHTML"),progressFirebase=document.getElementById("progressFirebase"),progressVuetify=document.getElementById("progressVuetify"),progressBootstrap=document.getElementById("progressBootstrap"),progressCSS=document.getElementById("progressCSS"),progressGit=document.getElementById("progressGit");
+const styleHomeNavItem=(e,t)=>{switch(e[0].target.id){case"home":e[0].isIntersecting?(homeNavItem.classList.add("nav-item-active"),mobileHomeNavItem.classList.add("nav-item-active")):(homeNavItem.classList.remove("nav-item-active"),mobileHomeNavItem.classList.remove("nav-item-active"));break;case"aboutMe":e[0].isIntersecting?(aboutMeNavItem.classList.add("nav-item-active"),mobileAboutMeNavItem.classList.add("nav-item-active")):(aboutMeNavItem.classList.remove("nav-item-active"),mobileAboutMeNavItem.classList.remove("nav-item-active"));break;case"skills":e[0].isIntersecting?(testimonialInterval=setInterval(()=>{carouselCount=++carouselCount>4?0:carouselCount,startCarousel()},4e3),skillsNavItem.classList.add("nav-item-active"),mobileSkillsNavItem.classList.add("nav-item-active"),progressJS.value=70,progressVue.value=70,progressReact.value=70,progressTailwind.value=80,progressHTML.value=80,progressFirebase.value=75,progressVuetify.value=70,progressBootstrap.value=80,progressCSS.value=70,progressGit.value=65):(clearInterval(testimonialInterval),skillsNavItem.classList.remove("nav-item-active"),mobileSkillsNavItem.classList.remove("nav-item-active"),progressJS.value=0,progressVue.value=0,progressReact.value=0,progressTailwind.value=0,progressHTML.value=0,progressFirebase.value=0,progressVuetify.value=0,progressBootstrap.value=0,progressCSS.value=0,progressGit.value=0);break;case"myPortfolio":e[0].isIntersecting?(myportfolioNavItem.classList.add("nav-item-active"),mobileMyportfolioNavItem.classList.add("nav-item-active")):(myportfolioNavItem.classList.remove("nav-item-active"),mobileMyportfolioNavItem.classList.remove("nav-item-active"))}},observer=new IntersectionObserver(styleHomeNavItem,{root:null,rootMargin:"100px 0px 200px 0px",threshold:.45});observer.observe(sectionHome),observer.observe(sectionAboutMe),observer.observe(sectionSkills),observer.observe(sectionMyPortfolio);
+
+document.addEventListener('DOMContentLoaded', () => {
+    changeLanguage('en');
+});

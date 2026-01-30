@@ -11,23 +11,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Erick Oliva Frontend Developer</title>
+    <title>Erick Oliva Software Engineer</title>
 </head>
 
 <body>
     <header>
         <nav class="hidden fixed lg:flex flex-col justify-around h-screen px-8 2xl:px-14 py-24">
             <a href="#home" class="vertical-rl">
-                <span class="nav-items" id="homeNavItem">Home</span>
+                <span class="nav-items" data-i18n="homeNavItem"></span>
             </a>
             <a href="#aboutMe" class="vertical-rl">
-                <span class="nav-items" id="aboutMeNavItem">About Me</span>
+                <span class="nav-items" data-i18n="aboutMeNavItem"></span>
             </a>
             <a href="#skills" class="vertical-rl">
-                <span class="nav-items" id="skillsNavItem">Skills</span>
+                <span class="nav-items" data-i18n="skillsNavItem"></span>
             </a>
             <a href="#myPortfolio" class="vertical-rl">
-                <span class="nav-items" id="myportfolioNavItem">Portfolio</span>
+                <span class="nav-items" data-i18n="myportfolioNavItem"></span>
             </a>
         </nav>
         <div class="hidden fixed lg:flex gap-1 justify-around px-8">
@@ -47,26 +47,20 @@
                 </div>
             </div>
             <div>
-                <h2 class="text-4xl font-semibold" id="txtHello">Hello</h2>
-                <h1 class="text-7xl 2xl:text-8xl font-bold" id="txtMyName">I'm Erick</h1>
+                <h2 class="text-4xl font-semibold" data-i18n="txtHello"></h2>
+                <h1 class="text-7xl 2xl:text-8xl font-bold" data-i18n="txtMyName"></h1>
                 <p class="bg-teal-500 text-2xl lg:text-4xl py-1 mb-2 lg:mb-12 px-4 text-slate-800 font-semibold"
-                    id="txtWhatIAm">
-                    I'm a Frontend developer
+                    data-i18n="txtWhatIAm">
                 </p>
-                <p class="text-2xl inline lg:leading-10 font-medium" id="txtHomeP1">
-                    My name is Erick Oliva, currently transitioning from Vector Artist to
-
+                <p class="text-2xl inline lg:leading-10 font-medium" data-i18n="txtHomeP1">
                 </p>
                 <span
                     class="text-2xl inline lg:leading-10 font-medium underline decoration-teal-500 decoration-4 lg:underline-offset-6 "
-                    id="txtHomeP2">
-                    Front-End Developer.
+                    data-i18n="txtHomeP2">
                 </span>
-                <p class="text-2xl inline-block lg:leading-10 mb-3 lg:mb-12 font-medium" id="txtHomeP3">
-                    I'm a third year CS student and I'm very excited to get into tech development.
+                <p class="text-2xl inline-block lg:leading-10 mb-3 lg:mb-12 font-medium" data-i18n="txtHomeP3">
                 </p>
-                <p class="text-xl mb-0 lg:mb-4" id="txtHomeP4">
-                    Contact me:
+                <p class="text-xl mb-0 lg:mb-4" data-i18n="txtHomeP4">
                 </p>
                 <div class="flex gap-4 items-center mb-4 lg:mb-0">
                     <a rel="noopener noreferrer" href="https://www.linkedin.com/in/erick-oliva-0298381aa/"
@@ -75,10 +69,7 @@
                     </a>
                     <a rel="noopener noreferrer" href="https://github.com/erikzon" target="_blank">
                         <img class="w-10 brightness-200 " src="assets/github.webp" alt="email">
-                    </a>
-                    <a rel="noopener noreferrer" href="https://www.fiverr.com/share/EkA4P8" target="_blank">
-                        <img class="w-10 brightness-200 " src="assets/fiverr.webp" alt="email">
-                    </a>
+                    </a> 
                     <a href="mailto:ericksonoliva@gmail.com" target="_blank">
                         <img class="w-10" src="assets/email.webp" alt="email">
                     </a>
@@ -90,38 +81,30 @@
             class="grid grid-flow-row lg:grid-flow-col lg:content-center lg:mx-auto lg:w-4/5 2xl:w-3/4 gap-8">
             <div>
                 <h2 class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5"
-                    id="txtAboutMeTittle">
-                    About Me</h2>
-                <p class="text-xl inline-block font-medium mb-3" id="txtAboutMeP1">
-                    The scope of my work is a large part of the front end: RWD, Paralax scrolling, coding layouts,
-                    mobile, single page apps. (MVC), animation, CSS / JS and other work based on HTML/ CSS / JS.
+                    data-i18n="txtAboutMeTittle">
+                </h2>
+                <p class="text-xl inline-block font-medium mb-3" data-i18n="txtAboutMeP1">
                 </p>
-                <p class="text-xl inline-block font-medium mb-3" id="txtAboutMeP2">
-                    I also build the applications PHP / MySQL mostly on open source systems like WordPress.
+                <p class="text-xl inline-block font-medium mb-3" data-i18n="txtAboutMeP2">
                 </p>
-                <p class="text-xl inline-block lg:mb-4 font-medium" id="txtAboutMeP3">
-                    PSD to HTML, PSD to WordPress.
+                <p class="text-xl inline-block lg:mb-4 font-medium" data-i18n="txtAboutMeP3">
                 </p>
             </div>
             <div>
                 <h3 class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5"
-                    id="txtExperienceTittle">
-                    Experience
+                    data-i18n="txtExperienceTittle">
                 </h3>
-                <h3 class="text-3xl font-medium leading-6" id="txtExperience1P1">Vector Artist</h3>
-                <h4 class="italic text-lg text-slate-200 mb-2" id="txtExperience1P2">Fiverr (2020 - current)</h4>
-                <p class="text-xl mb-6" id="txtExperience1P3">Working along my wife delivering vector artwork at
-                    Fiverr.com
+                <h3 class="text-3xl font-medium leading-6" data-i18n="txtExperience1P1"></h3>
+                <h4 class="italic text-lg text-slate-200 mb-2" data-i18n="txtExperience1P2"></h4>
+                <p class="text-xl mb-6" data-i18n="txtExperience1P3">
                 </p>
-                <h3 class="text-3xl font-medium leading-6" id="txtExperience2P1">Frontend web developer</h3>
-                <h4 class="italic text-lg text-slate-200 mb-2" id="txtExperience2P2">Digital Thinking (2020)</h4>
-                <p class="text-xl mb-6" id="txtExperience2P3"> Implemented responsive website, lading page and API
-                    consuming from Zoho CRM and REST apis.</p>
-                <h3 class="text-3xl font-medium leading-6" id="txtExperience3P1">ERCE test encoder</h3>
-                <h4 class="italic text-lg text-slate-200 mb-2" id="txtExperience3P2">DIGEDUCA and UNESCO Chile (2019)
+                <h3 class="text-3xl font-medium leading-6" data-i18n="txtExperience2P1"></h3>
+                <h4 class="italic text-lg text-slate-200 mb-2" data-i18n="txtExperience2P2"></h4>
+                <p class="text-xl mb-6" data-i18n="txtExperience2P3"></p>
+                <h3 class="text-3xl font-medium leading-6" data-i18n="txtExperience3P1"></h3>
+                <h4 class="italic text-lg text-slate-200 mb-2" data-i18n="txtExperience3P2">
                 </h4>
-                <p class="text-xl mb-6" id="txtExperience3P3">I worked grading and encoding the ERCE test applied in
-                    latinoamerica by Unesco</p>
+                <p class="text-xl mb-6" data-i18n="txtExperience3P3"></p>
             </div>
         </section>
         <!-- SKILLS SECTION -->
@@ -129,8 +112,7 @@
             class="grid grid-flow-row lg:grid-flow-col lg:grid-cols-3 content-center lg:pl-20 2xl:px-32 gap-4">
             <div class="lg:col-span-2">
                 <h3 class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5"
-                    id="txtCertificatesTittle">
-                    Certificates
+                    data-i18n="txtCertificatesTittle">
                 </h3>
                 <div class="flex flex-wrap gap-4 mb-6 content-center">
                     <a rel="noopener noreferrer" class="certificate-pill"
@@ -148,8 +130,7 @@
 
                 <div class="2xl:mt-12">
                     <h3 class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-5"
-                        id="txtTestimonialsTittle">
-                        Testimonials
+                        data-i18n="txtTestimonialsTittle">
                     </h3>
 
                     <!-- REVIEW EMPIEZA ACA -->
@@ -205,18 +186,14 @@
                     <!-- ACA TERMINA REVIEW -->
                     <div class="interior flex">
                         <a class="px-4 py-1 bg-teal-300 rounded-full text-slate-700 mx-auto" href="#open-modal"
-                            id="txtTestimonialDisclaimer">
-                            Disclaimer
+                            data-i18n="txtTestimonialDisclaimer">
                         </a>
                     </div>
                     <div id="open-modal" class="modal-window">
                         <div class="inline">
                             <a href="#visitanos" title="Close" class="modal-close">&times;</a>
                             <div>
-                                <p id="txtTestimonialsDisclaimerP" class="inline">
-                                    This is a proof of my soft skills.
-                                    These reviews can be found at my Fiverr site along with more than
-                                    300 reviews.                                
+                                <p data-i18n="txtTestimonialsDisclaimerP" class="inline">
                                 </p>
                                 <a href="https://www.fiverr.com/erick_oliva/do-some-outstanding-vector-of-any-anime-image-you-provide-me"
                                         class="underline underline-offset-2 font-bold inline">Click</a>
@@ -228,8 +205,7 @@
 
             <div>
                 <h2 class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mx-auto mb-4"
-                    id="txtSkillsTittle">
-                    Skills
+                    data-i18n="txtSkillsTittle">
                 </h2>
                 <ul class="text-2xl lg:text-lg 2xl:text-2xl leading-10 lg:leading-7 2xl:leading-8 font-medium">
                     <li>
@@ -288,8 +264,8 @@
         <!-- MY PORTFOLIO SECTION -->
         <section id="myPortfolio" class="md:mb-20 lg:mb-0 2xl:mt-12 grid content-center">
             <h2 class="font-bold text-5xl 2xl:text-6xl underline decoration-teal-500 decoration-4 underline-offset-8 mb-4 lg:mb-0 lg:py-4 lg:pl-16"
-                id="txtPortfolioTittle">
-                Portfolio</h2>
+                data-i18n="txtPortfolioTittle">
+            </h2>
             <article class="grid grid-flow-row md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2
                 content-center gap-4 lg:gap-0 lg:pl-20 lg:py-0">
                 <a rel="noopener noreferrer" href="https://oliprint.web.app" target="_blank"
@@ -297,9 +273,7 @@
                     <div class="p-2">
                         <img alt="oliprint" src="./assets/oliprint.webp"
                             class="mx-auto rounded-sm lg:w-5/6 2xl:w-auto" />
-                        <p class="lg:text-sm 2xl:text-base" id="txtPortfolioP1">
-                            This project use Firebase to let you create an user and store your favorite products. It
-                            also let you filter products by tags.
+                        <p class="lg:text-sm 2xl:text-base" data-i18n="txtPortfolioP1">
                         </p>
                         <hr class="border-teal-200">
                         <div class="flex gap-2 flex-wrap">
@@ -313,9 +287,8 @@
                     class="hover:bg-teal-600 box-border rounded-md bg-teal-600 lg:bg-transparent">
                     <div class="p-2">
                         <img alt="imp" src="./assets/ospgt.webp" class="mx-auto rounded-sm lg:w-5/6 2xl:w-auto" />
-                        <p class="lg:text-sm 2xl:text-base" id="txtPortfolioP2">
-                            This e-commerce site let you explore the products by categories, it implements Zoho to get
-                            data about your leaders.</p>
+                        <p class="lg:text-sm 2xl:text-base" data-i18n="txtPortfolioP2">
+                        </p>
                         <hr class="border-teal-200">
                         <div class="flex gap-2 flex-wrap">
                             <span class="pill">Vue JS</span>
@@ -330,9 +303,7 @@
                     <div class="p-2">
                         <img alt="tengo sed" src="./assets/tengosed.webp"
                             class="mx-auto rounded-sm lg:w-5/6 2xl:w-auto" />
-                        <p class="lg:text-sm 2xl:text-base" id="txtPortfolioP3">Sitio Web de un restaurante local.
-                            permite visualizar los platillos, conocer la ubicacion y ofrece distintos metodos de
-                            contacto.</p>
+                        <p class="lg:text-sm 2xl:text-base" data-i18n="txtPortfolioP3"></p>
                         <hr class="border-teal-200">
                         <div class="flex gap-2 flex-wrap">
                             <span class="pill">Vanilla JS</span>
@@ -345,9 +316,8 @@
                     <div class="p-2">
                         <img alt="codigo 502" src="./assets/codigo502.webp"
                             class="mx-auto rounded-sm lg:w-5/6 2xl:w-auto" />
-                        <p class="lg:text-sm 2xl:text-base" id="txtPortfolioP4">
-                            Esta web consume la API pantry que aloja los datos de los proximos eventos que realizara
-                            la agrupacion. Permite agregar y modificar eventos facilmente desde el sitio web.</p>
+                        <p class="lg:text-sm 2xl:text-base" data-i18n="txtPortfolioP4">
+                        </p>
                         <hr class="border-teal-200">
                         <div class="flex gap-2 flex-wrap">
                             <span class="pill">Vanilla JS</span>
@@ -360,9 +330,8 @@
                     <div class="p-2">
                         <img alt="budgets app" src="./assets/budgets.webp"
                             class="mx-auto rounded-sm lg:w-5/6 2xl:w-auto" />
-                        <p class="lg:text-sm 2xl:text-base" id="txtPortfolioP5">
-                            Web App that keeps track of your expenses, you can create, delete y modify Budgets. it
-                            has persistent data due to the use of Local Storage.</p>
+                        <p class="lg:text-sm 2xl:text-base" data-i18n="txtPortfolioP5">
+                        </p>
                         <hr class="border-teal-200">
                         <div class="flex gap-1 flex-wrap">
                             <span class="pill">React JS</span>
@@ -376,9 +345,8 @@
                     <div class="p-2">
                         <img alt="budgets app" src="./assets/noticiasguatemala.png"
                             class="mx-auto rounded-sm lg:w-5/6 2xl:w-auto" />
-                        <p class="lg:text-sm 2xl:text-base" id="txtPortfolioP6">
-                            Web App that keeps track of your expenses, you can create, delete y modify Budgets. it
-                            has persistent data due to the use of Local Storage.</p>
+                        <p class="lg:text-sm 2xl:text-base" data-i18n="txtPortfolioP6">
+                        </p>
                         <hr class="border-teal-200">
                         <div class="flex gap-1 flex-wrap">
                             <span class="pill">React JS</span>
@@ -392,20 +360,20 @@
     </main>
     <footer
         class="backdrop-blur-md bg-opacity-50 bg-slate-700 font-semibold fixed bottom-0 lg:hidden w-full px-4 pt-4 pb-5 flex justify-around md:text-xl border-teal-500 border-t-4">
-        <a href="#home" class="nav-items-mobile" id="mobileHomeNavItem">
+        <a href="#home" class="nav-items-mobile" data-i18n="mobileHomeNavItem">
             <img src="assets/navbarlogo/home.svg" alt="home">
         </a>
-        <a href="#aboutMe" class="nav-items-mobile" id="mobileAboutMeNavItem">
+        <a href="#aboutMe" class="nav-items-mobile" data-i18n="mobileAboutMeNavItem">
             <img src="assets/navbarlogo/me.svg" alt="me">
         </a>
-        <a href="#skills" class="nav-items-mobile" id="mobileSkillsNavItem">
+        <a href="#skills" class="nav-items-mobile" data-i18n="mobileSkillsNavItem">
             <img src="assets/navbarlogo/code.svg" alt="skills">
         </a>
-        <a href="#myPortfolio" class="nav-items-mobile" id="mobileMyportfolioNavItem">
+        <a href="#myPortfolio" class="nav-items-mobile" data-i18n="mobileMyportfolioNavItem">
             <img src="assets/navbarlogo/portfolio.svg" alt="portfolio">
         </a>
     </footer>
-    <script src="app.js"></script>
-    <script src="lang.js"></script>
+    <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+    <script type="module" src="../src/app.js"></script>
 </body>
 </html>
